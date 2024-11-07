@@ -1,16 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>A Night at Home</title>
     <link rel="stylesheet" href="style.css">
+    <script>
+        /*to prevent Firefox FOUC, this must be here*/
+        let FF_FOUC_FIX;
+    </script>
 </head>
 
 <body>
-    <div id="passageText"></div>
-    <div id="choices"></div>
+    <!-- Start Page Section -->
+    <div class="start-page">
+        <h1>A Night at Home </h1>
+        <p>Welcome to the game! Are you ready to begin?</p>
+        <a href="story.html">
+            <button>Start Game</button> 
+            
+            <button>Saves</button>
+        </a>
+    </div>
 
-    <script src="script.js"></script>
+    <script src="srcipt.js"></script>
 </body>
+
 </html>

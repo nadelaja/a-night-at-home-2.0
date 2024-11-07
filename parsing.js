@@ -15,22 +15,22 @@ function renderPassage(pid) {  // Display the text and choices for each passage
     document.getElementById('passageText').innerHTML = formatText(passage.text); //Update displayed text via passageText ID
 
     const choicesContainer = document.getElementById('choices'); // Initialize choices container ? buttons
-    choicesContainer.innerHTML = '';  //Clear any pervious text
+    choicesContainer.innerHTML = ''; // Clear previous choice
 
-    //This is ugly and needs to be fixed
-    passage.links.forEach(link => {  //Looping through the link choices in the passage
+    // Create buttons for each link in the passage
+    passage.links.forEach(link => {
         let choiceButton = document.createElement('button');
-        choiceButton.innerText = link.name;
-        choiceButton.onclick = () => loadNextPassage(link.pid);
-        choicesContainer.appendChild(choiceButton);
+        choiceButton.innerText = link.name;  // Set the button text
+        choiceButton.onclick = () => loadNextPassage(link.pid);  // Set the button action
+        choicesContainer.appendChild(choiceButton);  // Add the button to the choices container
     });
 }
 
 function formatText(text) {
-    // Basic replacements for demonstration, refine as needed
+    // Replace custom button syntax and handle links
     return text
-        .replace(/\(\(button:"(.*?)"\)\)/g, '<button>$1</button>')  // Handle buttons
-        .replace(/\[\[(.*?)\-\>(.*?)\]\]/g, '$1');                 // Simplify link format
+        .replace(/\(button:"(.*?)"\)/g, '<button>$1</button>')  // Replace Harlowe button syntax if it exists
+        .replace(/\[\[(.*?)\-\>(.*?)\]\]/g, '<span class="link">$1</span>');  // Display link text without link functionality
 }
 
 function loadNextPassage(nextPid) {
