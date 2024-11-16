@@ -1,17 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>A Night at Home</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="story.css">
 </head>
 
 <body>
+
     <div class="gameContainer">
+        <div class="nav">
+            <div id="buttonContainer"></div>
+
+            <a>Back</a>
+            <a>Forward</a> <!--Hide until the users is beyond the first passage-->
+            <a>Home</a>
+            <a>Gates</a>
+            <div>Pause/play</div> <!--Music-->
+            <!--How would i do this?? It'll be a modal,
+            I'll append the users choices to it...
+            Okay but what about the navitation buttons then??-->
+            <div>Story Paths</div> 
+
+        </div>
+        <div class="fearBarContainer">
+            <span id="fearLabel" class="fearLabel">Calm</span>
+            <div id="fearBar" class="fearBar"></div>
+        </div>
+        
         <div id="passageText"></div>
     </div>
 
-    <script src="parsing.js"></script>
+    <script src="script.js"></script>
 </body>
+
 </html>

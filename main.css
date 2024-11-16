@@ -1,0 +1,123 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+    background: #060200;/*#2b2b2b*/
+    /* Dark theme: Lights off */ 
+    font-family: 'Courier New', Courier, monospace;
+    color: #ddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.gameTitle {
+    /*background-color: black;*/
+    color: aliceblue;
+    text-align: center;
+}
+
+.gameImage{
+        text-align: center;
+}
+
+/*Summary page*/
+.blurb{
+    margin: auto 50px 30px 50px;
+}
+
+.gameContainer,
+.mapContainer {
+    font-size: 18px;
+    text-align: left;
+    margin: auto;
+    width: 70%;
+    background-color: #060200;
+    /*overflow: hidden;*/
+    display: flex;
+    flex-direction: column;
+
+}
+
+.menu,
+.storyGates {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+/*.menuButton {
+    color: red;
+    text-align: center;
+}*/
+
+.menuButton,
+.gate {
+    background-color: #f0f8ff;
+    border: none;
+    color: #000;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 20px 20px;
+    cursor: pointer;
+    width: 150px;
+    height: 150px;
+    border-radius: 50% 50% 0 0; /* Arch Top /Yippie! */
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 15px 40px -25px rgb(218, 165, 32); /* Light leaking out effect */
+}
+
+.menuButton:hover,
+.gate:hover {
+    /* Yellow BG White Text? */
+    background-color:#daa520;
+    color: #f0f8ff;
+    
+}
+
+.menuButton:active,
+.gate:active {
+box-shadow: rgba(218, 165, 32, .02) 0px 25px 20px -20px;
+}
+
+.menuButton span {
+    display: block;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* For smaller screens*/
+@media (max-width: 768px) {
+    .menu {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .menuButton {
+        /*width: 100%;*/
+        font-size: 1rem;
+        padding: .75rem 1rem;
+    }
+
+    .blurb{
+        margin: auto;
+    }
+}

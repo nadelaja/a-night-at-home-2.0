@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>A Night at Home</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="main.css">
     <script>
         /*to prevent Firefox FOUC, this must be here*/
         let FF_FOUC_FIX;
@@ -13,24 +13,29 @@
 </head>
 
 <body>
-    <div class="startPage">
-        <h1>A Night at Home </h1>
+    <div class="gameContainer">
+        <h1 class="gameTitle">A Night at Home </h1>
         <!--Image above or below-->
 
-        <p>Welcome to the game! Are you ready to begin?</p>
+        <p class="gameImage">Booming system uh uh ty track ty track</p>
 
-        <a href="story.html" class="desktop-icon">
-            <button>Start Game</button> 
-        </a>
+        <div class="menu">
+            <a href="story.html">
+                <button class="menuButton">Begin</button>
+            </a>
 
-        <a href="_blank" class="desktop-icon">        
-            <button>About</button>
-        </a>
+            <a href="about.html">
+                <button class="menuButton">About</button>
+            </a>
 
-        <a href="_blank" class="desktop-icon">
-                <button>Saves</button>
-        </a>
-        
+            <a href="_blank">
+                <button class="menuButton">Saves</button>
+            </a>
+
+            <a href="gates.html">
+                <button class="menuButton">Gates</button>
+            </a>
+        </div>
     </div>
 
     <script src="srcipt.js"></script>
