@@ -10,33 +10,36 @@
 </head>
 
 <body>
-    <div class="mapContainer">
+    <div class="gateContainer">
+        <h1 class="backArrow">
         <h1 class="gameTitle">Story Gates</h1>
 
         <!--<h2>Story Maps</h2>-->
         <p style="text-align: center;">omg are you really gonna cheat :0</p>
         <h3 class="subtitle">Night 1</h3>
 
+        <div  id="passageText">
         <div class="storyGates">
 <!-- onsubmit="return searchbooks(event)"-->
             <a href="story.html">
             <button class="gate">Start - (Front Door)</button>
             </a>
-            <button class="gate">Window</button>
+            <button id="frontWindow" class="gate" data-pid="26">Window</button> <!--26-->
 
-            <button class="gate">???</button>
+            <button id="random" class="gate">???</button>  <!--Random passage genorator-->
 
-            <button class="gate">Hammer to the Wall</button>
+            <button id="Hammer" class="gate" data-pid="22">Hammer to the Wall</button> <!--22-->
 
-            <button class="gate">A Song for the Frightened</button>
+            <button id="Cope" class="gate">Cope</button> <!---->
 
-            <button class="gate">Confront It!</button>
+            <button id="Confront" class="gate">Confront It!</button> <!---->
 
-            <button class="gate">Day 1 - Bad End</button>
+            <button  id="badEnd" class="gate">Day 1 - Bad End</button> <!---->
 
-            <button class="gate">Day 1 - Good End 1</button>
+            <button id="goodEnd1" class="gate">Day 1 - Good End 1</button> <!---->
 
-            <button class="gate">Day 1 - Good End 2</button>
+            <button id="goodEnd2" class="gate">Day 1 - Good End 2</button> <!---->
+
 
         </div>
 
@@ -51,8 +54,13 @@
             <button class="gate">???</button>
 
         </div>
+    </div>
 
     </div>
+        
+
+    <script src="script.js"></script>
+
 </body>
 
 </html>

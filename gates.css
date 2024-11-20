@@ -1,9 +1,10 @@
-.mapContainer {
+.gateContainer {
     padding: 0px 150px;
 }
 
 .storyGates{
     margin-bottom: 50px;
+    /*display: inline-block;*/
 }
 .subtitle {
     text-align: center;

@@ -1,9 +1,14 @@
+//if statments to change passage bg colors?? 
 let gameData;
 let currentPassageId;
-const passageHistory = []; //Passage history array! 
+const passageHistory = []; //Passage history array!
+const forwardHistory = []; // Tracks forward navigation
+//So when the back button is used the value is updated to true and the forward button appears
+let backButtonUsed = false; 
 
 //Things are going to need ids later for styling BOOOOooooOOoO~!
 
+//Fetch game data from the JSON file
 fetch('A _Night_at_Home_JSON.json') //HTTP Fetch Request
     .then(response => response.json())   //Promise chain...
     .then(data => {
@@ -19,11 +24,13 @@ function renderPassage(pid) {
         console.error(`Could not find passage ${pid}`);
         return;
     }
+    console.log("Rendering passage:", passage);
 
     document.getElementById('passageText').innerHTML = formatText(passage.text);
     createNavigationButtons(passage); // Nav button creation
 }
 
+// Format text and create clickable links
 function formatText(text) {
     return text.replace(/\[\[(.*?)\-\>(.*?)\]\]/g, (match, linkText, linkName) => {
         const linkPid = getPassageIdByName(linkName); // Find the actual pid using the link name
@@ -31,7 +38,7 @@ function formatText(text) {
             console.error(`Could not find pid for passage ${linkName}`);
             return linkText; // Return plain text if pid isn't found
         }
-        return `<span class="link" onclick="loadNextPassage('${linkPid}')">${linkText}</span>`;
+        return `<span stlye="" class="link" onclick="loadNextPassage('${linkPid}')"><b>${linkText}</b></span>`;
     });
 }
 
@@ -52,69 +59,47 @@ function getPassageIdByName(linkName) {
         }
     }
 
-    // Return null if no matching link is found
+    // Return null if there is no matching link found
     return null;
 }
 
-// Updateed function to update the current passage via Id and re-renders the passage with the new pid
+// Updated function to load the next passage via Id add current passage to history array
 function loadNextPassage(nextPid) {
     console.log("Loading next passage with ID:", nextPid);
-    // Save current passage to history history array before changing (including the start page!)
-    if (currentPassageId) { // Don't track starting page!
+    // Save current passage to history array before changing (including the start page!)
+    if (currentPassageId && !backButtonUsed) {  //And backButtonUsed is false 
         passageHistory.push(currentPassageId);
+        console.log(passageHistory)
     }
+    forwardHistory.length = 0; // Clear forward history
     currentPassageId = nextPid;
+    backButtonUsed = false;
     renderPassage(currentPassageId);
 }
 
-
 // Button Navigation!
-
-let buttonConfig = {
-    'back': { label: 'Back', action: 'previous' },
-    'continue': { label: 'Continue', action: 'next' },
-    // Add more button configurations as needed
-};
-
 function createNavigationButtons(passage) {
-    const buttonContainer = document.getElementById('buttonContainer'); //...hmmm
-    buttonContainer.innerHTML = ''; // Clear existing buttons
+    const buttonContainer = document.getElementById('buttonContainer');
+    buttonContainer.innerHTML = ''; // Clear previous buttons
 
-    // Create buttons based on available links in the passage
-    if (passage.links) {
-        passage.links.forEach(link => {
-            const button = document.createElement('button');
-            button.className = 'navigation-button';
-            button.textContent = link.text || link.link; //The || (or) means use link.text if it exists, if not, use link.link
-            button.onclick = () => loadNextPassage(getPassageIdByName(link.link));
-            buttonContainer.appendChild(button);
-        });
+    // Create Back button if there's a history
+    if (shouldShowButton(passage, 'previous')) {
+        const backButton = document.createElement('button');
+        backButton.id = 'backButton';
+        backButton.className = 'navigation-button';
+        backButton.textContent = 'Back';
+        backButton.onclick = () => handleNavigationAction(passage, 'previous');
+        buttonContainer.appendChild(backButton);
     }
 
-    // Add standard navigation buttons if configured
-    Object.entries(buttonConfig).forEach(([key, config]) => { //Interating through Json objects key,config pairs
-        // key would be 'back' or 'continue'
-        // config would be { label: 'Back', action: 'previous' }
-        if (shouldShowButton(passage, config.action)) {
-            const button = document.createElement('button'); //Button element is created
-            button.className = 'navigation-button'; //Given a class name
-            button.textContent = config.label; //Button text is the 
-            button.onclick = () => handleNavigationAction(passage, config.action);
-            buttonContainer.appendChild(button);
-        }
-    });
-}
-
-function shouldShowButton(passage, action) {
-    switch (action) {
-        case 'previous':
-            // Show back button if there's a history
-            return passage.pid !== "34"; // Don't show on starting passage
-        case 'next':
-            // Show continue button if there's a default next passage
-            return passage.defaultNext !== undefined;
-        default:
-            return false;
+    // Create Forward button
+    if (shouldShowButton(passage, 'next')) {
+        const forwardButton = document.createElement('button');
+        forwardButton.id = 'forwardButton';
+        forwardButton.className = 'navigation-button';
+        forwardButton.textContent = 'Forward';
+        forwardButton.onclick = () => handleNavigationAction(passage, 'next');
+        buttonContainer.appendChild(forwardButton);
     }
 }
 
@@ -122,17 +107,34 @@ function handleNavigationAction(passage, action) {
     switch (action) {
         case 'previous':
             if (passageHistory.length > 0) {
-                const previousPid = passageHistory.pop(); // Get the last passage from history
-                currentPassageId = previousPid;   // Load it without adding to history
+                const previousPid = passageHistory.pop();  // Remove passage ID from history array
+                forwardHistory.push(currentPassageId);    // Save the current passage to the forward navigation array
+                currentPassageId = previousPid;          // Navigate to the previous passage
+                backButtonUsed = true;
                 renderPassage(currentPassageId);
             }
             break;
         case 'next':
-            if (passage.defaultNext) {
-                loadNextPassage(passage.defaultNext);
+            if (forwardHistory.length > 0) {
+                const nextPid = forwardHistory.pop();
+                passageHistory.push(currentPassageId);
+                currentPassageId = nextPid;
+                backButtonUsed = false;
+                renderPassage(currentPassageId);
             }
             break;
     }
 }
 
-//Fear Bar
+function shouldShowButton(passage, action) {
+    switch (action) {
+        case 'previous': // Show the back button if there's anything in the history
+            return passageHistory.length > 0;
+
+        case 'next': // Show the forward button if there's anything in forward history
+            return forwardHistory.length > 0;
+
+        default: // For anything else, whatever it might be
+            return false;
+    }
+}
