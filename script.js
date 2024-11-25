@@ -8,15 +8,23 @@ let backButtonUsed = false;
 
 //Things are going to need ids later for styling BOOOOooooOOoO~!
 
-//Fetch game data from the JSON file
-fetch('A _Night_at_Home_JSON.json') //HTTP Fetch Request
-    .then(response => response.json())   //Promise chain...
+//Fetch game data from the JSON file standard start or gate selection
+fetch('A _Night_at_Home_JSON.json')
+    .then(response => response.json())
     .then(data => {
         gameData = data.passages;
-        currentPassageId = "34"; // Starting passage ID ignoring the "start" page
+
+        // Check URL parameters first
+        const urlParams = new URLSearchParams(window.location.search);
+        const passageFromURL = urlParams.get('pid');
+
+        // Use the URL parameter for a gate if it exists, otherwise use default "34"
+        currentPassageId = passageFromURL || "34";
         renderPassage(currentPassageId);
     });
+        
 
+    
 // Updated renderPassage function that includes button creation
 function renderPassage(pid) {
     const passage = gameData.find(p => p.pid === pid);
@@ -29,6 +37,16 @@ function renderPassage(pid) {
     document.getElementById('passageText').innerHTML = formatText(passage.text);
     createNavigationButtons(passage); // Nav button creation
 }
+
+// Gates page functionality!
+const gates = document.querySelectorAll('.gate');
+
+gates.forEach(gate => {
+    gate.addEventListener('click', () => {
+        const passageId = gate.dataset.pid;
+        window.location.href = `story.html?pid=${passageId}`;
+    });
+});
 
 // Format text and create clickable links
 function formatText(text) {
@@ -138,3 +156,45 @@ function shouldShowButton(passage, action) {
             return false;
     }
 }
+
+//Fear Bar
+// Categorization
+const braveryPIDs = [15, 4, 16, 9, 20, 23, 24, 25, 26, 28, 12, 17, 18];
+const fearPIDs = [14, 6, 13, 12, 21, 22, 27, 20];
+const neutralityPIDs = [34, 9, 10, 19, 11];
+
+// Initial fear bar state
+let fearLevel = 50; // Start at 50% everyone is a little nervous at night...
+
+/* *
+ * Updates the fear bar based on the choice's PID.
+ * @param {number} pid - The passage ID of the user's choice.
+ */
+/*function updateFearBar(pid) {
+    const fearBar = document.getElementById("fearBar");
+
+    // Adjust fear level based on choice's PID
+    if (braveryPIDs.includes(pid)) {
+        fearLevel = Math.max(0, fearLevel - 10); // Decrease fear
+    } else if (fearPIDs.includes(pid)) {
+        fearLevel = Math.min(100, fearLevel + 10); // Increase fear
+    }
+    // NeutralityPIDs leave fearLevel unchanged
+
+    // Update the fear bar's width
+    fearBar.style.width = `${fearLevel}%`;
+
+    // Bar's color update based on "intensity"?? PICK NEW COLORS
+    if (fearLevel < 30) {
+        fearBar.style.backgroundColor = "green"; // Calm
+    } else if (fearLevel < 70) {
+        fearBar.style.backgroundColor = "yellow"; // Uneasy
+    } else {
+        fearBar.style.backgroundColor = "red"; // Panicked
+    }
+
+    if (fearLevel >= 90 ) {
+        currentPassageId = "2";
+        renderPassage(currentPassageId);
+    }
+} */

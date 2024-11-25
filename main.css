@@ -31,14 +31,14 @@ a {
 
 /*Summary page*/
 .blurb{
-    margin: auto 50px 30px 50px;
+    padding: 0px 160px 30px 160px;
 }
 
 .gameContainer,
 .gateContainer {
     font-size: 18px;
     text-align: left;
-    margin: auto;
+    margin: auto  160px;  /*<-- fix this-->
     width: 70%;
     background-color: #060200;
     /*overflow: hidden;*/

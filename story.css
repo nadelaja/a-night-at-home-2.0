@@ -14,9 +14,11 @@
     }*/
 
 .nav {
-    border-bottom: #f0f8ff;
+    margin: 50px 0px;
+
 }
-.nav a, .nav div {
+
+test  {
     display: inline-block;
     padding: 10px 15px;
     margin: 0 5px; /* Add spacing between elements */
@@ -27,31 +29,47 @@
     text-align: center;
 }
 
-#backButton,
-#forwardButton {
-        background-color: #f0f8ff;
-            border: none;
-            color: #000;
-            padding: 15px 32px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 16px;
-            margin: 20px 20px;
-            cursor: pointer;
-            width: 125px;
-            height: 50px;
-            border-radius: 50% 50% 0 0;
-            /* Arch Top Yippie! */
-            position: relative;
-            overflow: hidden;
-            box-shadow: 0 15px 40px -25px rgb(218, 165, 32);
-            /* Light leaking out effect */
+.navigation-button {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: relative;
+
+
 }
+
+#backButton,
+#forwardButton, .nav a,
+.nav div {
+    background-color: #f0f8ff;
+    border: none;
+    color: #000;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    width: 125px;
+    height: 50px;
+    border-radius: 50% 50% 0 0;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 15px 40px -25px rgb(218, 165, 32);
+}
+
+/*#backButton {
+
+}
+
+#forwardButton {
+
+}*/
 
 #passageText{
     font-size: 18px;
     color:#f0f8ff;
+    /*padding: 0px 160px 30px 160px;*/
 }
 
 .link {
@@ -76,22 +94,25 @@
     border: 2px solid #444;
     border-radius: 13px;
     margin: 20px 0;
-    padding: 5px;
+    padding: 15px;
 }
 
 .fearLabel {
     font-size: 22px;
-    color: #ddd;
+    color: #fff;
+    /*that one ice white blue color;*/
     min-width: 60px;
     text-align: right;
 }
 
-.fearBar {
-    flex-grow: 1;
+#fearBar {
+    /*flex-grow: 1;*/
+    /*This is what is filling the bar, find alternative */
     height: 100%;
     width: 0;
     /* Start empty */
-    background-color: grey; /*#ff3b3b*/
+    background-color: grey;
+    /*#ff3b3b*/
     border-radius: 8px;
     transition: width 0.3s ease-in-out;
 }
