@@ -21,8 +21,7 @@ fetch('A _Night_at_Home_JSON.json')
         // Use the URL parameter for a gate if it exists, otherwise use default "34"
         currentPassageId = passageFromURL || "34";
         renderPassage(currentPassageId);
-    });
-        
+    });       
 
     
 // Updated renderPassage function that includes button creation
@@ -34,8 +33,10 @@ function renderPassage(pid) {
     }
     console.log("Rendering passage:", passage);
 
-    document.getElementById('passageText').innerHTML = formatText(passage.text);
-    createNavigationButtons(passage); // Nav button creation
+    if (document.getElementById('passageText')) {
+        document.getElementById('passageText').innerHTML = formatText(passage.text);
+        createNavigationButtons(passage); // Nav button creation
+    }
 }
 
 // Gates page functionality!
@@ -47,6 +48,32 @@ gates.forEach(gate => {
         window.location.href = `story.html?pid=${passageId}`;
     });
 });
+
+// Random passage function c:
+function randomPassage(min, max, exclude) {
+    let selectedPassage;
+    do {
+        selectedPassage = Math.floor(Math.random() * (max - min + 1)) + min;
+    } while (exclude.includes(selectedPassage)); // Exclude the specified passages
+    return selectedPassage;
+}
+
+    // Add an event listener to the "random" button
+if (document.getElementById('random')) { // if... to fix the type error occuring when not on the gates page
+    document.getElementById('random').addEventListener('click', () => {
+        const min = 2; // Define the range of passage IDs
+        const max = 52;
+        const exclude = [9, 12, 49, 51,]; // Passages I want exclude, just make the min 52 to exclude 53
+        const randomPassageId = randomPassage(min, max, exclude);
+
+        // Add the passage to my history
+        passageHistory.push(randomPassageId);
+
+        // Redirect to the new passage page
+        window.location.href = `story.html?pid=${randomPassageId}`;  // Same as above but with a random passageID
+        });
+}
+
 
 // Format text and create clickable links
 function formatText(text) {

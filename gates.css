@@ -1,11 +1,43 @@
-.gateContainer {
-    padding: 0px 150px;
+.gateContainer{
+    width: 50%;
 }
 
-.storyGates{
-    margin-bottom: 50px;
-    /*display: inline-block;*/
+.header{
+    display: flex;    /*add styling for smaller screens*/
+    flex-direction: row;
+    justify-content: center;
+    gap: 2.5em;
+    
 }
+
+.backArrow {
+    text-align: center;
+    color: #f0f8ff;
+    font-size: 3.5em;
+}
+
+/*.gameTitle {
+    padding: 70px 0px;
+}*/
+
+.backArrow:hover {
+    color: #daa520;
+}
+
 .subtitle {
     text-align: center;
+}
+
+.storyGates {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 2em;
+    /* Adjust spacing between columns */
+
+    /* Optional: Adds spacing between items */
+}
+
+.gate {
+    margin-bottom: 10px;
 }

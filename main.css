@@ -25,26 +25,28 @@ a {
     text-align: center;
 }
 
-.gameImage{
+.gameImage {
         text-align: center;
 }
 
 /*Summary page*/
-.blurb{
-    padding: 0px 160px 30px 160px;
+.blurb {
+    padding: 30px 2em 30px 2em;
+}
+
+.gameContainer{
+    width: 75%;
 }
 
 .gameContainer,
 .gateContainer {
     font-size: 18px;
     text-align: left;
-    margin: auto  160px;  /*<-- fix this-->
-    width: 70%;
-    background-color: #060200;
+    margin: auto  18em; 
+    /*background-color: #060200;
     /*overflow: hidden;*/
     display: flex;
     flex-direction: column;
-
 }
 
 .menu,
@@ -53,6 +55,7 @@ a {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    margin: 10px 10px;
     width: 100%;
 }
 
