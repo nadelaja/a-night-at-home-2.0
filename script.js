@@ -2,7 +2,7 @@
 let gameData;
 let currentPassageId;
 const passageHistory = []; //Passage history array!
-const forwardHistory = []; // Tracks forward navigation
+const forwardHistory = []; // Tracks forward navigation!
 //So when the back button is used the value is updated to true and the forward button appears
 let backButtonUsed = false; 
 

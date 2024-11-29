@@ -7,7 +7,7 @@ body {
     background: #060200;/*#2b2b2b*/
     /* Dark theme: Lights off */ 
     font-family: 'Courier New', Courier, monospace;
-    color: #ddd;
+    color: #fcf8f0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -21,8 +21,9 @@ a {
 
 .gameTitle {
     /*background-color: black;*/
-    color: aliceblue;
+    color: #fcf8f0;
     text-align: center;
+    margin: 0;
 }
 
 .gameImage {
@@ -66,7 +67,7 @@ a {
 
 .menuButton,
 .gate {
-    background-color: #f0f8ff;
+    background-color: #fcf8f0;
     border: none;
     color: #000;
     padding: 15px 32px;
@@ -88,7 +89,7 @@ a {
 .gate:hover {
     /* Yellow BG White Text? */
     background-color:#daa520;
-    color: #f0f8ff;
+    color: #fcf8f0;
     
 }
 

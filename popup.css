@@ -1,0 +1,102 @@
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.75);
+    /* Semi-transparent background */
+    z-index: 9999;
+    /* Make sure the pop-up is on top of everything */
+}
+
+.popup-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50% 50% 0 0;
+    background-color: #fcf8f0;
+    color: #060200;
+    padding: 20px;
+    width: 300px;
+    /* of  the popup box */
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.popup-content h2 {
+    text-align: center;
+    font-size: 1.75em;
+    font-weight: 550;
+}
+
+.popup-content p {
+    font-size: 1.25em;
+    text-align: center;
+}
+
+.save-popup .popup-content {
+    width: 500px;
+    height: 450px
+}
+
+/*.about-popup .popup-content {
+    width: 400px;
+    height: 390px
+}
+
+.controls-popup .popup-content {
+    width: 400px;
+    height: 250px
+}*/
+
+.close-btn {
+    position: absolute;
+    bottom: 8px;
+    right: 240px;
+    font-size: 1.25em;
+    cursor: pointer;
+}
+
+.close-btn:hover {
+    color:#daa520;
+}
+
+.saveContainer {
+
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.saveSlot {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid 1px #060200;
+    padding: 1em;
+    margin-bottom: 1.5em;
+    background-color: #fcf8f0;
+    padding: 15px 32px;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    width: 125px;
+    height: 50px;
+    overflow: hidden;
+    box-shadow: 0 15px 40px -25px #060200;
+}
+
+/*<div id="save-popup" class="popup save-popup">
+            <div class="popup-content">
+                <span class="close-btn">&#x2716;</span>
+                <h2>Save Slots</h2>
+                <div class="saveContainer" id="playerSaves">
+                    <button class="saveSlot" id="save1"> Save 1</button>
+                    <button class="saveSlot" id="save2">Save 2</button>
+                    <button class="saveSlot" id="save3">Save 3</button>
+                    <button class="saveSlot" id="save4">Save 4</button>
+                </div>*/

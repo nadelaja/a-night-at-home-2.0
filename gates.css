@@ -1,28 +1,39 @@
 .gateContainer{
     width: 50%;
+    margin-top: 1em;
 }
 
-.header{
-    display: flex;    /*add styling for smaller screens*/
-    flex-direction: row;
+.header {
+    display: flex;
+    align-items: center;
     justify-content: center;
-    gap: 2.5em;
-    
+    gap: 2em;
+    color: #fcf8f0;
+    margin-top: 1em;
 }
 
 .backArrow {
-    text-align: center;
-    color: #f0f8ff;
-    font-size: 3.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #daa520;
+    font-size: 1.5em;
+    text-decoration: none;
+    border-radius: 50%;
+    width: 1.5em;
+    height: 1.5em;
+    transition: background-color 0.3s, color 0.3s;
+    cursor: pointer;
 }
-
-/*.gameTitle {
-    padding: 70px 0px;
-}*/
 
 .backArrow:hover {
-    color: #daa520;
+    background-color: #daa520;
+    color: #fcf8f0;
 }
+.gatesPageTitle {
+    margin: 0;
+}
+
 
 .subtitle {
     text-align: center;
