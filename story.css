@@ -27,7 +27,17 @@
     border-radius: 50% 50% 0 0;
     position: relative;
     overflow: hidden;
+    transition: background-color 0.3s, color 0.3s;
     box-shadow: 0 15px 40px -25px rgb(218, 165, 32);
+}
+
+#backButton:hover,
+#forwardButton:hover,
+.nav a:hover,
+.nav a button:hover,
+.nav div:hover {
+    background-color: #daa520;
+    color: #fcf8f0;
 }
 
 /*#backButton {
@@ -45,14 +55,14 @@
 }
 
 .link {
-    color: #8fbcbb;
+    color: #daa520; /*#8fbcbb*/
     /* A nice blue for links */
     text-decoration: underline;
     cursor: pointer;
 }
 
 .link:hover {
-    color: #88c0d0;
+    color: #cc9216; /*#88c0d0;*/
     text-decoration: none;
 }
 

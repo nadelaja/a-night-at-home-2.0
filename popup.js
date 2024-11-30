@@ -1,41 +1,55 @@
-//A better fucntion to open my pop-ups
-
 // Open a pop-up
-function openPopup(popupId) {
+/*function openPopup(popupId) {
     document.querySelector(popupId).style.display = 'block';
 }
 
 // Close a pop-up
 function closePopup(popup) {
     popup.style.display = 'none';
-}
+}*/
 
-// Add event listeners after DOM loads
+//A better function for the save pop-ups
+
+// After DOM loads event listiner
 document.addEventListener('DOMContentLoaded', function () {
 
-// Open the save pop-up
-document.getElementById('save-btn').addEventListener('click', function () {
-    openPopup('#save-popup');
-});
+    // Close button variable
 
-// Close close all pop-ups
-document.querySelectorAll('.close-btn').forEach(function (btn) {
-    btn.addEventListener('click', function () {
-        closePopup(this.parentNode.parentNode);
+    fetch('popup.html')
+        .then(response => response.text())
+        .then(html => {
+            // Load save popup HTML
+            document.body.insertAdjacentHTML('beforeend', html);
+
+            // Close the pop-ups
+            const closeBtn = document.getElementById('close-btn');
+
+            const savePopup = document.getElementById('save-popup');
+            closeBtn.addEventListener('click', function () {
+                savePopup.style.display = 'none';
+            });
+            // Getting the save slots to woRk!!! >:
+            document.querySelectorAll('.saveSlot').forEach(slot => {
+                slot.addEventListener('click', function () {
+                    console.log(` u clicked ${this.id}!`);
+                    // Add your save functionality here
+                });
+            });
+        });
+    console.log('popup error')
+
+    const saveBtn = document.getElementById('save-btn') // For the inital save/saves buttons
+    saveBtn.addEventListener('click', function () {
+        const savePopup = document.getElementById('save-popup');
+        savePopup.style.display = 'block';
     });
-});
 
-// Close all pop-ups when clicking outside
-function outsideClick(event) {
-    const popups = document.querySelectorAll('.popup');
-    popups.forEach(function (popup) {
-        if (event.target === popup) {
-            closePopup(popup);
+    // Close the popup when clicking outside
+    function outsideClick(event) {
+        const savePopup = document.getElementById('save-popup');
+        if (event.target === savePopup) {
+            savePopup.style.display = 'none'
         }
-    });
-}
-
-window.addEventListener('click', outsideClick);
-//window.addEventListener('touchstart', outsideClick);
-
+    }
+    window.addEventListener('click', outsideClick);
 });

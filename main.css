@@ -82,6 +82,7 @@ a {
     border-radius: 50% 50% 0 0; /* Arch Top /Yippie! */
     position: relative;
     overflow: hidden;
+    transition: background-color 0.3s, color 0.3s;
     box-shadow: 0 15px 40px -25px rgb(218, 165, 32); /* Light leaking out effect */
 }
 
@@ -104,6 +105,12 @@ box-shadow: rgba(218, 165, 32, .02) 0px 25px 20px -20px;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.copy {
+    text-align: center;
+    margin-top:5em;
+    font-size: .75em;
 }
 
 

@@ -44,17 +44,7 @@
     height: 450px
 }
 
-/*.about-popup .popup-content {
-    width: 400px;
-    height: 390px
-}
-
-.controls-popup .popup-content {
-    width: 400px;
-    height: 250px
-}*/
-
-.close-btn {
+#close-btn {
     position: absolute;
     bottom: 8px;
     right: 240px;
@@ -62,13 +52,11 @@
     cursor: pointer;
 }
 
-.close-btn:hover {
+#close-btn:hover {
     color:#daa520;
 }
 
 .saveContainer {
-
-    justify-content: center;
     margin: 0 auto;
 }
 
@@ -88,15 +76,10 @@
     height: 50px;
     overflow: hidden;
     box-shadow: 0 15px 40px -25px #060200;
+    transition: background-color 0.3s, color 0.3s;
 }
 
-/*<div id="save-popup" class="popup save-popup">
-            <div class="popup-content">
-                <span class="close-btn">&#x2716;</span>
-                <h2>Save Slots</h2>
-                <div class="saveContainer" id="playerSaves">
-                    <button class="saveSlot" id="save1"> Save 1</button>
-                    <button class="saveSlot" id="save2">Save 2</button>
-                    <button class="saveSlot" id="save3">Save 3</button>
-                    <button class="saveSlot" id="save4">Save 4</button>
-                </div>*/
+.saveSlot:hover {
+    color: #fcf8f0;
+    background-color: #060200;
+}
