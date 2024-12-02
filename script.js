@@ -6,8 +6,6 @@ const forwardHistory = []; // Tracks forward navigation!
 //So when the back button is used the value is updated to true and the forward button appears
 let backButtonUsed = false; 
 
-//Things are going to need ids later for styling BOOOOooooOOoO~!
-
 //Fetch game data from the JSON file standard start or gate selection
 fetch('A _Night_at_Home_JSON.json')
     .then(response => response.json())
@@ -33,9 +31,9 @@ function renderPassage(pid) {
     }
     console.log("Rendering passage:", passage);
 
-    if (document.getElementById('passageText')) {
+    if (document.getElementById('passageText')) { // If...to clear an error
         document.getElementById('passageText').innerHTML = formatText(passage.text);
-        createNavigationButtons(passage); // Nav button creation
+        createNavButtons(passage); // Nav button creation
     }
 }
 
@@ -58,12 +56,12 @@ function randomPassage(min, max, exclude) {
     return selectedPassage;
 }
 
-    // Add an event listener to the "random" button
+    // Add an event listener to the random passage button
 if (document.getElementById('random')) { // if... to fix the type error occuring when not on the gates page
     document.getElementById('random').addEventListener('click', () => {
         const min = 2; // Define the range of passage IDs
-        const max = 52;
-        const exclude = [9, 12, 49, 51,]; // Passages I want exclude, just make the min 52 to exclude 53
+        const max = 51;
+        const exclude = [9, 12, 49, 51,]; // Passages I want exclude, just make the min 50 to exclude 51/52
         const randomPassageId = randomPassage(min, max, exclude);
 
         // Add the passage to my history
@@ -123,7 +121,7 @@ function loadNextPassage(nextPid) {
 }
 
 // Button Navigation!
-function createNavigationButtons(passage) {
+function createNavButtons(passage) {
     const buttonContainer = document.getElementById('buttonContainer');
     buttonContainer.innerHTML = ''; // Clear previous buttons
 
@@ -133,7 +131,7 @@ function createNavigationButtons(passage) {
         backButton.id = 'backButton';
         backButton.className = 'navigation-button';
         backButton.textContent = 'Back';
-        backButton.onclick = () => handleNavigationAction(passage, 'previous');
+        backButton.onclick = () => NavigationAction(passage, 'previous');
         buttonContainer.appendChild(backButton);
     }
 
@@ -143,12 +141,12 @@ function createNavigationButtons(passage) {
         forwardButton.id = 'forwardButton';
         forwardButton.className = 'navigation-button';
         forwardButton.textContent = 'Forward';
-        forwardButton.onclick = () => handleNavigationAction(passage, 'next');
+        forwardButton.onclick = () => NavigationAction(passage, 'next');
         buttonContainer.appendChild(forwardButton);
     }
 }
 
-function handleNavigationAction(passage, action) {
+function NavigationAction(passage, action) {
     switch (action) {
         case 'previous':
             if (passageHistory.length > 0) {
@@ -182,6 +180,15 @@ function shouldShowButton(passage, action) {
         default: // For anything else, whatever it might be
             return false;
     }
+}
+
+
+// Function for backround color change
+
+const lightsOnPages = []
+function lightsOn() {
+/* if page in history = and page in lights on 
+pages array then backgrond color and text color change*/
 }
 
 //Fear Bar

@@ -19,15 +19,19 @@ a {
     text-decoration: none;
 }
 
+a h1:hover {
+    color: #daa520;
+}
+
 .gameTitle {
     /*background-color: black;*/
     color: #fcf8f0;
     text-align: center;
-    margin: 0;
+    margin: 1em 0;
 }
 
 .gameImage {
-        text-align: center;
+    text-align: center;
 }
 
 /*Summary page*/

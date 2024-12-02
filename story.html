@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>A Night at Home</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="story.css">
@@ -15,11 +16,7 @@
 <body>
 
     <div class="gameContainer">
-        <div id="buttonContainer" class="navigation-button">
-
-            <!-- holds the back and forward buttons, hidden until the users is beyond the first passage-->
-        </div>
-
+        <div id="navWrapper">
         <div class="nav">
             <a href="index.html">Home</a> <!--Figure out local storage-->
             <a href="gates.html">Gates</a> <!--Redirect or overlay??-->
@@ -28,11 +25,21 @@
                         I'll append the users choices to it...to repetative :/// IT IS DONE!!-->
         </div>
 
+                <div id="buttonContainer" class="navigation-button">
+                
+                    <!-- holds the back and forward buttons, hidden until the users is beyond the first passage-->
+                </div>
+
+        </div>
+
         <div id="passageText"></div>
     </div>
 
     <script src="script.js"></script>
     <script src="popup.js"></script>
+    <script src="saves.js"></script>
+    
 </body>
 
 </html>
+

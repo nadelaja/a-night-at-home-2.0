@@ -40,14 +40,14 @@
 }
 
 .save-popup .popup-content {
-    width: 500px;
+    width: 450px;
     height: 450px
 }
 
 #close-btn {
     position: absolute;
     bottom: 8px;
-    right: 240px;
+    right: 217px;
     font-size: 1.25em;
     cursor: pointer;
 }
@@ -60,6 +60,13 @@
     margin: 0 auto;
 }
 
+.saveAndDelete {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+}
+
 .saveSlot {
     display: flex;
     align-items: center;
@@ -68,7 +75,6 @@
     padding: 1em;
     margin-bottom: 1.5em;
     background-color: #fcf8f0;
-    padding: 15px 32px;
     text-decoration: none;
     font-size: 16px;
     cursor: pointer;
@@ -82,4 +88,27 @@
 .saveSlot:hover {
     color: #fcf8f0;
     background-color: #060200;
+}
+
+#trash1,
+#trash2,
+#trash3,
+#trash4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    width: 50px;
+    height: 50px;
+    transition: color 0.3s;
+}
+
+#trash1:hover i,
+#trash2:hover i,
+#trash3:hover i,
+#trash4:hover i {
+    color: #daa520;
 }

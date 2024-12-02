@@ -1,16 +1,24 @@
-.nav {
-    margin: 50px 0px;
+#navWrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3em;
+    align-items: center;
+    width: 100%;
+}
+
+#buttonContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .navigation-button {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    position: relative;
+    margin-left: 10px;
 }
 
 #backButton,
-#forwardButton, .nav a,
+#forwardButton,
+.nav a,
 .nav a button,
 .nav div {
     background-color: #fcf8f0;

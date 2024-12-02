@@ -4,28 +4,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
     <title>Popup</title>
 </head>
 
 <body>
-        <!--Save Popup Things-->
-        <div id="save-popup" class="popup save-popup">
-            <div class="popup-content">
-                <span id="close-btn" >&#x2716;</span>
-                <h2>Save Slots</h2>
-                <div class="saveContainer" id="playerSaves">
-                    <button class="saveSlot" id="save1"> Save 1</button>
-                    <button class="saveSlot" id="save2">Save 2</button>
-                    <button class="saveSlot" id="save3">Save 3</button>
-                    <button class="saveSlot" id="save4">Save 4</button>
+    <!--Save Popup Things-->
+    <div id="save-popup" class="popup save-popup">
+        <div class="popup-content">
+            <span id="close-btn">&#x2716;</span>
+            <h2>Save Slots</h2>
+            <div class="saveContainer" id="playerSaves">
+                <div class="saveAndDelete">
+                    <button class="saveSlot" id="save1">Save 1</button>
+                    <button id="trash1"><i class="fa-solid fa-trash"></i></button><!-- Works -->
                 </div>
-        
-                <!--<p>
+                <div class="saveAndDelete">
+                    <button class="saveSlot" id="save2">Save 1</button>
+                    <button id="trash2"><i class="fa-solid fa-trash"></i></button><!-- Works -->
+                </div>
+                <div class="saveAndDelete">
+                    <button class="saveSlot" id="save3">Save 1</button>
+                    <button id="trash3"><i class="fa-solid fa-trash"></i></button><!-- Works -->
+                </div>
+                <div class="saveAndDelete">
+                    <button class="saveSlot" id="save4">Save 1</button>
+                    <button id="trash4"><i class="fa-solid fa-trash"></i></button><!-- Works -->
+                </div>
+            </div>
+
+            <!--<p>
                             A game I am building to share my hobbies and interests with others!
                         </p>-->
-        
-            </div>
+
         </div>
+    </div>
 </body>
 
 </html>
