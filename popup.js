@@ -28,13 +28,6 @@ document.addEventListener('DOMContentLoaded', function () {
             closeBtn.addEventListener('click', function () {
                 savePopup.style.display = 'none';
             });
-            // Getting the save slots to woRk!!! >:
-            document.querySelectorAll('.saveSlot').forEach(slot => {
-                slot.addEventListener('click', function () {
-                    console.log(` u clicked ${this.id}!`);
-                    // Add your save functionality here
-                });
-            });
         });
     console.log('popup error')
 

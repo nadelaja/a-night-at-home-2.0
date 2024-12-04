@@ -31,7 +31,7 @@ function renderPassage(pid) {
     }
     console.log("Rendering passage:", passage);
 
-    if (document.getElementById('passageText')) { // If...to clear an error
+    if (document.getElementById('passageText')) { // Check if passageText exists to clear an error
         document.getElementById('passageText').innerHTML = formatText(passage.text);
         createNavButtons(passage); // Nav button creation
     }
@@ -72,17 +72,35 @@ if (document.getElementById('random')) { // if... to fix the type error occuring
         });
 }
 
-
 // Format text and create clickable links
+// Add formating for text styles :)))))))) aaaaah!
 function formatText(text) {
-    return text.replace(/\[\[(.*?)\-\>(.*?)\]\]/g, (match, linkText, linkName) => {
+    // Replace links (existing functionality)
+    let formattedText = text.replace(/\[{2,3}(.*?)\-\>(.*?)\]{2,3}/g, (match, linkText, linkName) => {
         const linkPid = getPassageIdByName(linkName); // Find the actual pid using the link name
         if (!linkPid) {
             console.error(`Could not find pid for passage ${linkName}`);
             return linkText; // Return plain text if pid isn't found
         }
-        return `<span stlye="" class="link" onclick="loadNextPassage('${linkPid}')"><b>${linkText}</b></span>`;
+        return `<span style="" class="link" onclick="loadNextPassage('${linkPid}')"><b>${linkText}</b></span>`;
     });
+
+    //Remove /n and replace then with breaks
+    formattedText = formattedText.replace(/\n/g, '<br>');
+
+    // Removes the click macros and clean up the square bracket
+    formattedText = formattedText.replace(/\(click:.*?\)\[/g, ''); // Removes "(click:...)["
+
+    // Italic formatting for text wrapped in double slashes //scary//
+    formattedText = formattedText.replace(/\/\/(.*?)\/\//g, "<i>$1</i>");
+
+    // Bold formatting for text wrapped in two single quotes ''more scary text''
+    formattedText = formattedText.replace(/''(.*?)''/g, "<b>$1</b>");
+
+    // Removes (button:...) macros
+    formattedText = formattedText.replace(/\(button:".*?"\)/g, '');
+
+    return formattedText;
 }
 
 // Another function to find the pid by link name :(
@@ -106,7 +124,7 @@ function getPassageIdByName(linkName) {
     return null;
 }
 
-// Updated function to load the next passage via Id add current passage to history array
+// Updated function to load the next passage via Id and add current passage to history array
 function loadNextPassage(nextPid) {
     console.log("Loading next passage with ID:", nextPid);
     // Save current passage to history array before changing (including the start page!)
@@ -232,3 +250,5 @@ let fearLevel = 50; // Start at 50% everyone is a little nervous at night...
         renderPassage(currentPassageId);
     }
 } */
+
+    

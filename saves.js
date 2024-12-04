@@ -1,15 +1,4 @@
-// Function for saving story states/passages
-// Will figure of how to connect it to the bar later
-
-/* Saving... actually I think they could be the same function
-// Just with an if
-    Like If button has page load value with a pid
-    open the story to that passage
-    Else give the button the value/pid of the current passage
-*/
-// Enhanced Save System for Interactive Story
-
-// Save slots configuration
+// Save slots array
 const SAVE_SLOTS = ['save1', 'save2', 'save3', 'save4'];
 
 // Function to save game progress
@@ -21,7 +10,7 @@ function saveGame(slotIndex) {
     }
 
     const slotKey = SAVE_SLOTS[slotIndex];
-    
+
     // Get current passage ID from the global variable or URL
     const currentPid = getCurrentPassageId();
 
@@ -106,7 +95,7 @@ function updateSaveSlotUI() {
         if (!slotElement) return;
 
         const saveData = JSON.parse(localStorage.getItem(slotKey));
-        
+
         if (saveData) {
             // If save exists, show details
             const saveDate = new Date(saveData.timestamp);

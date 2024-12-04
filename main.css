@@ -37,6 +37,7 @@ a h1:hover {
 /*Summary page*/
 .blurb {
     padding: 30px 2em 30px 2em;
+    line-height: 1.5em;
 }
 
 .gameContainer{

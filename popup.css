@@ -46,7 +46,7 @@
 
 #close-btn {
     position: absolute;
-    bottom: 8px;
+    bottom: 12px;
     right: 217px;
     font-size: 1.25em;
     cursor: pointer;
@@ -67,7 +67,8 @@
     gap: 1em;
 }
 
-.saveSlot {
+.saveSlot,
+.empty-save {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -90,10 +91,7 @@
     background-color: #060200;
 }
 
-#trash1,
-#trash2,
-#trash3,
-#trash4 {
+.deleteBtn{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -106,9 +104,12 @@
     transition: color 0.3s;
 }
 
-#trash1:hover i,
-#trash2:hover i,
-#trash3:hover i,
-#trash4:hover i {
+.deleteBtn:hover {
     color: #daa520;
+}
+
+
+.used-save {
+    background-color: red;
+    color: #000;
 }

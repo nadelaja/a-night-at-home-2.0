@@ -59,8 +59,40 @@
 #passageText{
     font-size: 18px;
     color:#fcf8f0;
+    line-height: 1.5em;
+    max-height: 600px;
+        /* Set a max height for the container */
+        overflow-y: auto;
+        overflow-x: hidden;
     /*padding: 0px 160px 30px 160px;*/
 }
+
+/* For Chrome, Edge, and Safari */
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #060200;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #fcf8f0;
+    border-radius: 10px;
+}
+
+/*Firefox is strange!!*/
+html {
+    scrollbar-width: thin;
+    scrollbar-color: #fcf8f0 #060200;
+}
+
+
+
+
+
+
 
 .link {
     color: #daa520; /*#8fbcbb*/
