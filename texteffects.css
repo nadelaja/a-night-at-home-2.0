@@ -76,3 +76,9 @@
         2px 2px 0px #000, 
         -2px -2px 0px #000;*/
 }
+
+.bigBad{
+    font-size: 0.8em;
+    color: grey;
+    font-family: serif;
+}
