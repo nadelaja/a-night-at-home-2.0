@@ -1,7 +1,7 @@
 #navWrapper {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 3em;
+    margin-bottom: 4em;
     align-items: center;
     width: 100%;
 }
@@ -21,6 +21,7 @@
 .nav a,
 .nav a button,
 .nav div {
+    font-family: "Della Respira", serif;
     background-color: #fcf8f0;
     border: none;
     color: #000;
@@ -28,7 +29,7 @@
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
+    font-size: 1.05em;
     cursor: pointer;
     width: 125px;
     height: 50px;
@@ -60,6 +61,7 @@
     font-size: 18px;
     color:#fcf8f0;
     line-height: 1.5em;
+    font-kerning: auto;
     max-height: 600px;
         /* Set a max height for the container */
         overflow-y: auto;
@@ -88,14 +90,8 @@ html {
     scrollbar-color: #fcf8f0 #060200;
 }
 
-
-
-
-
-
-
 .link {
-    color: #daa520; /*#8fbcbb*/
+    color: #daa520; /*#8fbcbb*/ 
     /* A nice blue for links */
     text-decoration: underline;
     cursor: pointer;

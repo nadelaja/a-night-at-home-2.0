@@ -57,9 +57,8 @@
 
 .glitch {
     animation: glitch 1.5s infinite;
-    color: red;
-    /*font-family: serif;
-    font-style: italic;*/
+    font-family: "Della Respira", serif;
+    font-style: italic;
     display: inline-block;
     font-size: 26px;
 
@@ -78,7 +77,7 @@
 }
 
 .bigBad{
-    font-size: 0.8em;
-    color: grey;
+    font-size: 0.9em;
+    color:grey;
     font-family: serif;
 }

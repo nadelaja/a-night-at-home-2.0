@@ -1,8 +1,7 @@
 
-
 {
   "passages": [
-    {
+  /* {
       "text": "The door shuts behind them with a soft click, and you’re left standing in the entryway. The old house seems to exhale around you, settling into silence as the familiar sound of your parents’ cars fade down the street. You catch a glimpse of their taillights through the window—one final flash of red before they disappear into the night.\n\n“See you tomorrow,” you murmur to yourself. You should be used to this by now—being home alone. It’s not like it’s the first time. Still, tonight feels different somehow...\n\nMaybe it’s nothing at all. \n\nYou turn away, and head back toward the living room. Everything is normal. The walls are the same familiar shade of blue they always are. The lights overhead are bright and steady. There’s no reason to feel on edge.\n\nBut then—\n\n//[[Scratch.->Goodnight 02]]//\n",
       "links": [
         {
@@ -22,7 +21,7 @@
         "Sleep-Rats-Found",
         "Window"
       ]
-    },
+    },*/
     {
       "text": "The sound is faint, almost too soft to notice. You freeze, every muscle tensing, ears straining to catch the sound again. But there’s nothing. Silence, thick and heavy. Did you just imagine it? You’re not sure, but—\n\n''Scratch.''\n''Scratch.''This time, it’s clearer. Low and dry, like something sharp dragging lightly across wood. Your heart starts to beat rapidly in your chest. What is that noise?\n\nYou turn, your gaze darts to the front door. It’s closed, but is it locked? Are all the locks secure?\n\nYour breath catches, a strange sense of urgency rising in your chest. Maybe you should check. Just to be safe. But… what if someone’s outside? What if you open the door and—\n\nNo. Don’t think about it. Just decide.\n\n[[Do you double-check the locks->Check the Lock]], or [[turn and run upstairs->Run Upstairs 01]], heart pounding?\n",
       "links": [

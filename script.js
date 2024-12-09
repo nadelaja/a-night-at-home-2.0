@@ -3,11 +3,13 @@ let gameData;
 let currentPassageId;
 const passageHistory = []; //Passage history array!
 const forwardHistory = []; // Tracks forward navigation!
+const lightsOnPages = ["20", "21", "22", "23", "24", "44", "39", "40", "41", "28", "29", "30", "31", "32", "33", "48", "50", "51", "9"];// Passages where the lights should be on
+const lightsOff = ["2", "42"]; // Passages where the lights should page off
 //So when the back button is used the value is updated to true and the forward button appears
 let backButtonUsed = false; 
 
 //Fetch game data from the JSON file standard start or gate selection
-fetch('A _Night_at_Home_JSON.json')
+fetch('A _Night_at_Home_JSON copy.json')
     .then(response => response.json())
     .then(data => {
         gameData = data.passages;
@@ -35,6 +37,9 @@ function renderPassage(pid) {
         document.getElementById('passageText').innerHTML = formatText(passage.text);
         createNavButtons(passage); // Nav button creation
     }
+
+    // Call the lights function after rendering
+    lightsOn(pid);
 }
 
 // Gates page functionality!
@@ -61,7 +66,7 @@ if (document.getElementById('random')) { // if... to fix the type error occuring
     document.getElementById('random').addEventListener('click', () => {
         const min = 2; // Define the range of passage IDs
         const max = 51;
-        const exclude = [9, 12, 49, 51,]; // Passages I want exclude, just make the min 50 to exclude 51/52
+        const exclude = [9, 12, 49,]; // Passages I want exclude, just make the min 50 to exclude 51/52
         const randomPassageId = randomPassage(min, max, exclude);
 
         // Add the passage to my history
@@ -151,6 +156,7 @@ function createNavButtons(passage) {
         backButton.textContent = 'Back';
         backButton.onclick = () => NavigationAction(passage, 'previous');
         buttonContainer.appendChild(backButton);
+        console.log(forwardHistory)
     }
 
     // Create Forward button
@@ -200,20 +206,48 @@ function shouldShowButton(passage, action) {
     }
 }
 
+// Function for backround color chang
 
-// Function for backround color change
+/* if pid is in the passageHistory array and (includes) in the lightsOnPage array then
+the background and text colors change and remaind the new colors, if the pid
+is in the passageHistory array and the lightsOff array then the background 
+and text colors change and remaind the new colors, else nothing happenes*/
 
-const lightsOnPages = []
-function lightsOn() {
-/* if page in history = and page in lights on 
-pages array then backgrond color and text color change*/
+function lightsOn(pid) {
+    pid = String(pid); // Remeber that the PIDS ARE STRINGS
+    console.log(`Checking lights for pid: ${pid}, type: ${typeof pid}`);
+    const passageText = document.getElementById('passageText');
+    //const linkLightsOn = document.querySelectorAll('.link');
+    const linkLightsOn = document.getElementsByClassName('link')
+
+
+    const isInHistory = passageHistory.includes(pid);  
+    const isCurrentPassage = pid === currentPassageId;  // Check the current pid too!
+
+    if (isInHistory || isCurrentPassage) {
+        if (lightsOnPages.includes(pid)) {
+            console.log("Lights On!")
+            document.body.style.backgroundColor = "#fbdfa2";  // Light mode
+            document.body.style.color = "#060200";  // Dark text
+            passageText.style.color = "#060200";  // Dark Text
+            linkLightsOn.style.color = "#d17a47";
+            
+        } else if (lightsOff.includes(pid)) {
+            console.log("Lights off!")
+            document.body.style.backgroundColor = "#060200"; // Dark mode
+            document.body.style.color = "#fcf8f0";          // Light text
+            passageText.style.color = "#fcf8f0";  // Light Text
+        } else {
+        console.log("No matching passage found.");
+    }
+    }
 }
 
 //Fear Bar
 // Categorization
-const braveryPIDs = [15, 4, 16, 9, 20, 23, 24, 25, 26, 28, 12, 17, 18];
-const fearPIDs = [14, 6, 13, 12, 21, 22, 27, 20];
-const neutralityPIDs = [34, 9, 10, 19, 11];
+const braveryPIDs = ["15", "4", "16", "9", "20", "23", "24", "25", "26", "28", "12", "17", "18"];
+const fearPIDs = ["14", "6", "13", "12", "21", "22", "27", "20"];
+const neutralityPIDs = ["34", "9", "10", "19", "11"];
 
 // Initial fear bar state
 let fearLevel = 50; // Start at 50% everyone is a little nervous at night...
