@@ -57,7 +57,7 @@
 
 .glitch {
     animation: glitch 1.5s infinite;
-    font-family: "Della Respira", serif;
+    font-family: serif;
     font-style: italic;
     display: inline-block;
     font-size: 26px;

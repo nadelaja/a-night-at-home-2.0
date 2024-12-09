@@ -1,0 +1,1116 @@
+
+
+{
+  "passages": [
+    {
+      "text": "(text-size: 4)+(align: \"=><=\")+(t8n:\"flicker\")+(transition-time: 3s)[A Night at Home]\n\n(button:\"=X=\")[[Begin Story->Goodnight 01]]",
+      "links": [
+        {
+          "name": "Begin Story",
+          "link": "Goodnight 01",
+          "pid": "34"
+        }
+      ],
+      "name": "A Night at Home - Start",
+      "pid": "1",
+      "position": {
+        "x": "1500",
+        "y": "100"
+      }
+    },
+    {
+      "text": "The moment you acknowledge it, the air in the room turns cold, and the atmosphere heavy with something…almost tangible. \n\nYou stand frozen, your eyes darting to the dark corners of the room. You can feel it watching you...\n\nYou’re not alone.\n\n“Who’s there?” Your whisper is barely audible, voice trembling. The shadows shiver, and the low hum buzzes in your skull again, a rasping sound like a thousand faint whispers.\n\nEyes, far too many eyes. They glimmer in the dark, flickering in and out of focus like stars. They hover in a dark swirling mass, a loose humanoid shape that seems to dissolve and reform with every breath you take.\n\n<div class=\"glitch\">“You see me.”</div>\n\nThe voice doesn’t come from anywhere. It’s inside you, rattling against your skull. It’s hungry. Desperate.\n\nAnd it knows[[ you’re afraid->Big Bad Encounter - Run]], but you [[stand firm->Big Bad Encounter - Stand Your Ground]].",
+      "links": [
+        {
+          "name": " you’re afraid",
+          "link": "Big Bad Encounter - Run",
+          "pid": "14"
+        },
+        {
+          "name": "stand firm",
+          "link": "Big Bad Encounter - Stand Your Ground",
+          "pid": "15"
+        }
+      ],
+      "name": "Big Bad - Echoes in the Dark",
+      "pid": "2",
+      "position": {
+        "x": "1300",
+        "y": "1500"
+      },
+      "tags": [
+        "Big-Bad"
+      ]
+    },
+    {
+      "text": "You swallow your fear, glaring at the entity. “I’m not afraid of you,” you say, the quiver in your voice betrays you. But you don’t look away.\n\nIt falters, the edges of its form flickering, blurring. Its eyes countless, shifting eyes focus on you, wide and searching.\n\n<div class=\"glitch\">''“Liar.”''</div>\n\nYou force yourself to take a step closer. ''“You can’t break me,”'' you say. ''“You’re nothing. Just a fragment of something that’s already gone.”''\n\nThe words cut through the air like a knife. The entity recoils, the swirling darkness tightening around itself.\n\nFor a moment, you think it’s going to lash out.\n\nBut instead, [[//it shrinks.//->Big Bad Encounter - Banishing Act]]\n\n[[You move forward, standing up straighter->Big Bad Encounter - Strike]]",
+      "links": [
+        {
+          "name": "//it shrinks.//",
+          "link": "Big Bad Encounter - Banishing Act",
+          "pid": "4"
+        },
+        {
+          "name": "You move forward, standing up straighter",
+          "link": "Big Bad Encounter - Strike",
+          "pid": "16"
+        }
+      ],
+      "name": "Big Bad Encounter - A Bold Gamble",
+      "pid": "3",
+      "position": {
+        "x": "1200",
+        "y": "1900"
+      },
+      "tags": [
+        "Big-Bad"
+      ]
+    },
+    {
+      "text": "The entity weakened, its form flickering like a dying flame. You feel the weight of its presence lifting—just a little. If you can sever its hold on you completely, maybe you can banish it back to wherever it came from.\n\nYou clench your fists, focusing on the swirling darkness. ''“Get. Out,”'' you whisper.\n\nThe entity recoils, a sound like shattering glass filling the air. Its eyes—dozens of them—widen in horror.\n\n<div class=\"glitch\">“No!”</div>\n\nYou take a step forward. “I said, get out!\"\n\nWith a final, desperate shriek, the entity’s form shatters. The pieces scatter, dissolving into thin air. The heaviness in the room vanishes, and the darkness peels away like mist under the sun.\n\nIt’s gone.\n\n//For now.//\n\nYou sink to your knees, vision blurring. Exhaustion washes over you, your body collapsing under the strain. As the darkness sweeps in, your last thought is that it’s over.\n\n[[Sleep drags you under before you can question it.->Big Bad Encounter - Good End]]",
+      "links": [
+        {
+          "name": "Sleep drags you under before you can question it.",
+          "link": "Big Bad Encounter - Good End",
+          "pid": "9"
+        }
+      ],
+      "name": "Big Bad Encounter - Banishing Act",
+      "pid": "4",
+      "position": {
+        "x": "1200",
+        "y": "2100"
+      },
+      "tags": [
+        "Big-Bad"
+      ]
+    },
+    {
+      "text": "You spin around, breathless, back pressed against the wall. The creature is there, just out of reach, its many eyes locked on yours. It doesn’t move; it just… //watches.//\n\nThe entity's voice echoes in your mind, scraping against your thoughts...\n\n<div class=\"glitch\">\"Why run?\"</div>\n\nThe words slither through you, curling around you, feeding off your fear. You try to push them out, to drown them in the pounding of your heart, but they come again, louder, more insistent.\n\n<div class=\"glitch\">\"You know you can't escape me. You feel it, don’t you? The fear... the desperation.\"</div>\n\nYour knees buckle. A crushing weight presses on your chest, making it hard to breathe. The floor beneath you feels unsteady, and the shadows stretch and shift, their shapes twisting into grotesque figures.\n\n<span class=\"bigBad\">//\"You can't resist forever,\"//</span> the entity purrs.\n\n<div class=\"glitch\" >\"Let me in.\"</div>\n\nYour heart hammers in your ears, and you feel the pull—the seductive offer of relief from this terror. If you just let go… if you just stop fighting… the fear would be gone.\n\n[[You wouldn't have to be scared anymore.->Big Bad Encounter - Entice]]",
+      "links": [
+        {
+          "name": "You wouldn't have to be scared anymore.",
+          "link": "Big Bad Encounter - Entice",
+          "pid": "6"
+        }
+      ],
+      "name": "Big Bad Encounter - Cornered",
+      "pid": "5",
+      "position": {
+        "x": "800",
+        "y": "1700"
+      },
+      "tags": [
+        "Big-Bad"
+      ]
+    },
+    {
+      "text": "The walls feel like they’re pressing in. The air is thick, suffocating. Your vision wavers, and your eyes water. You can feel the entity inching closer, close enough to touch, close enough to—\n\nYou squeeze your eyes shut, trying to focus, to will yourself into action. But the harder you try to push the fear away, the more it clings to you—sinking deeper into your mind, worming its way into every thought.\n\n<span class=\"bigBad\">//\"Why struggle?\"</span>//\n\nThe voice whispers again, closer this time, laced with desperation.<span class=\"bigBad\">// \"I will consume you, piece by piece... and you’ll feel nothing but peace when you give in.\"//</span>\n\n[[\"Peace...?\"->Big Bad Encounter - Relief?]] You turn the word around in your mind.\n",
+      "links": [
+        {
+          "name": "\"Peace...?\"",
+          "link": "Big Bad Encounter - Relief?",
+          "pid": "13"
+        }
+      ],
+      "name": "Big Bad Encounter - Entice",
+      "pid": "6",
+      "position": {
+        "x": "500",
+        "y": "1800"
+      },
+      "tags": [
+        "Big-Bad"
+      ]
+    },
+    {
+      "text": "The entity shudders violently as you lash out, striking at the unstable mass of shadow and light at its center. \n\nYou swing at it again and again\n\nThe cracks you inflict deepen, glowing brighter with every hit. Each blow sends a tremor through its form, splintering the darkness.\n\nIt recoils, writhing in pain, and you press the advantage. With every swing, the thing’s shape warps and distorts, struggling to hold itself together. For the first time, it feels less like a nightmare and more like something desperate—fractured and incomplete.\n\n<div class=\"glitch\">“Stop…” </div>  \n\nThe voice in your mind wavers, a chaotic mess of rage and anguish. <div class=\"glitch\">“You don’t understand—”</div>\n\n[[But you do.->Big Bad Encounter - Fractured Core Success]]",
+      "links": [
+        {
+          "name": "But you do.",
+          "link": "Big Bad Encounter - Fractured Core Success",
+          "pid": "8"
+        }
+      ],
+      "name": "Big Bad Encounter - Fractured Core",
+      "pid": "7",
+      "position": {
+        "x": "825",
+        "y": "1925"
+      },
+      "tags": [
+        "Big-Bad"
+      ]
+    },
+    {
+      "text": "You know what it wants—//to feed on your fear,// to reshape itself with your mind as its anchor. And you’re done letting it use you. You raise the hammer again, aiming straight for its core.\n\nIt howls—an unearthly, broken sound—echoing inside your skull as you bring the hammer down one last time. The fractured core shatters, a burst of light erupting from the whole in its chest. The entity’s form collapses around it, shadows unraveling.\n\n<div class=\"glitch\">“You… can’t…”</div>\n\nThe voice fades, stretched thin and brittle, breaking apart with the rest of it.\n\nAnd then, it crumbles. The shattered pieces dissolve into the air, swirling into a black mist that disintegrates as you watch.\n\nSilence falls, the weight of the air lifting. The room is still, the darkness retreating back into the corners, leaving nothing behind but a faint, lingering chill.\n\nYou sink to your knees, vision blurring. Exhaustion washes over you, your body collapsing under the strain. As the darkness sweeps in, your last thought is that it’s over.\n\n[[Sleep drags you under before you can question it.->Big Bad Encounter - Good End]]",
+      "links": [
+        {
+          "name": "Sleep drags you under before you can question it.",
+          "link": "Big Bad Encounter - Good End",
+          "pid": "9"
+        }
+      ],
+      "name": "Big Bad Encounter - Fractured Core Success",
+      "pid": "8",
+      "position": {
+        "x": "800",
+        "y": "2100"
+      },
+      "tags": [
+        "Big-Bad"
+      ]
+    },
+    {
+      "text": "Your eyes snap open. Daylight filters through your curtains, casting soft shadows across your bed. You blink, disoriented, a dull ache throbbing in your head.\n\nYou’re in your room. The same room. But the air feels lighter—no oppressive weight, no sinister whispers.\n\nJust… peace.\n\n You sit up slowly, rubbing at your eyes. Was it a dream? It felt like a dream. But deep down, you know it wasn’t.\n\nYou fought something last night. Something terrible.\n\nAnd you won.(click: \"And you won.\")[\n\n''Good End: Live to See Another Day''\n\nYou've defeated the dark force and lived to see an another day.\n\n(button:\"=X=\")[[Start Over->Goodnight 01]]]",
+      "links": [
+        {
+          "name": "Start Over",
+          "link": "Goodnight 01",
+          "pid": "34"
+        }
+      ],
+      "name": "Big Bad Encounter - Good End",
+      "pid": "9",
+      "position": {
+        "x": "1200",
+        "y": "2300"
+      },
+      "tags": [
+        "Big-Bad"
+      ]
+    },
+    {
+      "text": "But it’s everywhere. The whispers grow louder, tugging at your thoughts. Images flash in your mind—shattered pieces of something vast, something dark, spreading across the cosmos. A creature that shouldn’t exist. Eyes flicker behind your eyelids, ''multiplying''.\n\n<div class=\"glitch\">“Don’t look away,” </div> it hisses, writhing in front of you, losing shape and reforming in a heartbeat. \n\n<div class=\"glitch\" style=\"text-indent:2em\">“I will break you.”</div>\n\nYour body trembles as you fight to shove it out of your head, but it’s pushing back, prying open your thoughts, slipping into your memories.\n\n(t8n:\"pulse\")[''“Stop!”''] you cry out, throwing everything you have against it.\n\nThen for a moment, everything blurs. You see—feel—its shattered fragments, scattered across space and time, each one trying to pull itself together. And then, pain—the sensation of something breaking within you.\n\nBut you hold on. You push back.\n\n[[“No. I won’t let you in.”->Big Bad Encounter - Strike]]\n\nThe thing shrieks, recoiling.",
+      "links": [
+        {
+          "name": "“No. I won’t let you in.”",
+          "link": "Big Bad Encounter - Strike",
+          "pid": "16"
+        }
+      ],
+      "name": "Big Bad Encounter - Mental Battle",
+      "pid": "10",
+      "position": {
+        "x": "1000",
+        "y": "1900"
+      },
+      "tags": [
+        "Big-Bad"
+      ]
+    },
+    {
+      "text": "You stand frozen, your heart hammering against your ribs. Its form warps and twists, limbs bending at unnatural angles, eyes multiplying until they cover its figure completely. \n\nA wave of dread crashes over you as it becomes something  //''*worse*''//—something that defies human understanding. It’s no longer just a shattered cosmic being; it’s an abyss given form.\n\nIts new form trembles with insatiable hunger. The air around you thickens, and you can feel it pressing in on you. Your chest tightens, and your limbs feel heavy, like you're sinking into the floor. \n\n<span class=\"glitch\">“You can’t run…”</span>\n\n<span class=\"glitch\" style=\"text-indent: 2em\">\"you can’t hide…”</span>\n\nThe voice echoes in your skull, louder, sharper than before. You try to scream, but no sound comes out.\n\nIts eyes focus on you, and in one fluid, grotesque motion, the entity rushes forward. You freeze, fear crashes through your mind. Too vast to contain, it overwhelms every rational thought.\n\nIt presses against your skin, shape shifting once again. Dark tendrils force their way into your mouth. You choke, your body shaking violently as the entity slides down your throat, smothering your screams.\n\nPanic sets in, //but it’s useless//—your body is no longer yours. You can feel it—cold, wet, (t8n:\"pulse\")[''//alive//'']—spreading through your veins, seeping deep into your flesh. \n\nYour mind screaming in terror as the [[it tries to smother your consciousness with its own.->Big Bad Encounter - Suppressed]]",
+      "links": [
+        {
+          "name": "it tries to smother your consciousness with its own.",
+          "link": "Big Bad Encounter - Suppressed",
+          "pid": "17"
+        }
+      ],
+      "name": "Big Bad Encounter - Overwhelming Fear",
+      "pid": "11",
+      "position": {
+        "x": "500",
+        "y": "2200"
+      },
+      "tags": [
+        "Big-Bad"
+      ]
+    },
+    {
+      "text": "The entity leaves the room in your body, stepping into the hallway as you scream internally, fighting to regain control. But you’re helpless.\n\nIt moves toward the front door, footsteps steady, //predatory//. You feels your hunger—''//it’s//'' hunger—intensify with every step. You know exactly what it wants. \n\nThrough your eyes, you see a figure outside—one of the neighbors. They’re walking up to their porch, oblivious to the danger that approaches.\n\nThe entity smiles, and your mouth stretches into a grin that you know is not your own. You realize with horror what comes next. \n\nYou aren’t yourself anymore. You’re a vessel for something ancient, something hungry—and you are powerless to stop it. (click: \"you are powerless to stop it.\")[\n\n''Bad End: Devoured by Fear''\n\nYour mind is shattered, your will broken. The entity has claimed you, and through you, it will claim many more.\n\n(button:\"=X=\")[[Start Over->Goodnight 01]]]",
+      "links": [
+        {
+          "name": "Start Over",
+          "link": "Goodnight 01",
+          "pid": "34"
+        }
+      ],
+      "name": "Big Bad Encounter - Prey",
+      "pid": "12",
+      "position": {
+        "x": "500",
+        "y": "2600"
+      },
+      "tags": [
+        "Big-Bad"
+      ]
+    },
+    {
+      "text": "Your body trembles, and you feel the creeping sensation of something crawling beneath your skin. You can’t see it, but it’s there, moving slowly, inching its way closer to your core. You can almost feel its cold breath on the back of your neck.\n\nYour mind reels. A part of you screams to fight, to run, to do anything but give in. But another part—a part that’s growing louder by the minute—begs for an end to this terror. For the weight to lift. For the fear to stop.\n\nYou open your eyes, just a bit, and the world around you seems warped. Shadows twist into things they shouldn’t be. You see faces that leer at you, and mouths that stretch far too wide, waiting, watching.\n\n<span class=\"bigBad\">//\"You’re tired, aren’t you?\"//</span> the entity whispers, its voice no longer just in your head, but in the air around you. <span class=\"bigBad\">//\"I can feel it. I can make it stop. Just let me in... and I’ll take it all away.\"//</span>\n\nYour breath catches in your throat. Could it really be that easy? A single a moment of surrender, and you would be free.  The fear, and the darkness—it would all be over. Temptation wraps itself around you, and for the briefest moment, [[you consider it.->Big Bad Encounter - Overwhelming Fear]]\n\nThere’s no where to run, not anymore. [[But what can you do?->Big Bad Encounter - Fractured Core]]",
+      "links": [
+        {
+          "name": "you consider it.",
+          "link": "Big Bad Encounter - Overwhelming Fear",
+          "pid": "11"
+        },
+        {
+          "name": "But what can you do?",
+          "link": "Big Bad Encounter - Fractured Core",
+          "pid": "7"
+        }
+      ],
+      "name": "Big Bad Encounter - Relief?",
+      "pid": "13",
+      "position": {
+        "x": "500",
+        "y": "2000"
+      },
+      "tags": [
+        "Big-Bad"
+      ]
+    },
+    {
+      "text": "You turn and bolt to the opposite side of your room, every nerve in your body screaming at you to move.\n\nThe shadows seem to stretch, as if entity was chasing after you, spreading itself thin like a dark fog. A voice—cold and mocking—echoes in your head:\n\n<div class=\"glitch\">“Run.”</div>\n\n<div class=\"glitch\" style=\"text-indent: 2em\">“Run.”</div>\n\n<div class=\"glitch\" style=\"text-indent: 3em\">“But you can’t hide from me.”</div>\n\nYou stumble, a chill washing over you. Your limbs feel heavy, each step harder than the last. You can feel it just behind you, brushing against your back.\n\nAnd then, suddenly—[[it’s gone.->Big Bad Encounter - Cornered]]",
+      "links": [
+        {
+          "name": "it’s gone.",
+          "link": "Big Bad Encounter - Cornered",
+          "pid": "5"
+        }
+      ],
+      "name": "Big Bad Encounter - Run",
+      "pid": "14",
+      "position": {
+        "x": "1000",
+        "y": "1700"
+      },
+      "tags": [
+        "Big-Bad"
+      ]
+    },
+    {
+      "text": "You force yourself to straighten up. “What do you want?” you say, louder this time. \n\nThe thing doesn’t move closer, but you can feel it pressing in, like a fog filling every crevice of the room.\n\n<div class=\"glitch\">“To exist,”</div> it murmurs. The shape shifts, eyes blinking out of existence as more appear elsewhere. “I am scattered. Shattered. I need to become… whole.”\n\nThe words scrape against your mind. There’s a hunger in them, a need so deep it feels like it could pull you apart.\n\n<div class=\"glitch\">“And you… You give me shape. Give me form.”</div> It leans closer, and your breath catches as it washes over you like a tide of cold, dark water.\n\nIt feeds off attention—your fear.\n\n“No. I won’t let you.” Your voice is shaking, but you stand firm.\n\n<div class=\"glitch\">“You looked for me.\"</div>\n\nThe thing’s eyes narrow. “You cannot refuse me. I am what you see. I am your fear, your fascination—your need to know. And you are what makes me whole”\n\n[[Try to resist its influence->Big Bad Encounter - Mental Battle]]\n[[Confront it->Big Bad Encounter - A Bold Gamble]]",
+      "links": [
+        {
+          "name": "Try to resist its influence",
+          "link": "Big Bad Encounter - Mental Battle",
+          "pid": "10"
+        },
+        {
+          "name": "Confront it",
+          "link": "Big Bad Encounter - A Bold Gamble",
+          "pid": "3"
+        }
+      ],
+      "name": "Big Bad Encounter - Stand Your Ground",
+      "pid": "15",
+      "position": {
+        "x": "1200",
+        "y": "1700"
+      },
+      "tags": [
+        "Big-Bad"
+      ]
+    },
+    {
+      "text": "You’ve weakened it. Whatever it is, it’s unstable, barely holding itself together. If you can break its hold completely… maybe you can stop it from reforming.\n\nGathering your strength, you reach out—not with your hands, but with your mind. You imagine its form shattering, breaking into pieces and scattering into nothingness.\n\nThe entity howls. The room spins as its form flickers, eyes blinking out of existence. \n\n<div class=\"glitch\">“Stop!”</div> it screeches, its voice echoing like shards of glass scraping together. \n\n<span style=\"margin-left: 2em\" class=\"glitch\">“I will not—”</span>\n\nBut you push.\n\nThere’s a flash of white, searing pain tearing through your skull—and then, the its form explodes outward, dissolving into a cloud of dark mist. The air fills with a high-pitched shriek that reverberates in your bones, and then—\n\nSilence.\n\nThe mist scatters, vanishing into the shadows.\n\nYou sink to your knees, vision blurring. Exhaustion washes over you, your body collapsing under the strain. As the darkness sweeps in, your last thought is that it’s over.\n\n[[Sleep drags you under before you can question it.->Big Bad Encounter - Good End]]",
+      "links": [
+        {
+          "name": "Sleep drags you under before you can question it.",
+          "link": "Big Bad Encounter - Good End",
+          "pid": "9"
+        }
+      ],
+      "name": "Big Bad Encounter - Strike",
+      "pid": "16",
+      "position": {
+        "x": "1075",
+        "y": "2100"
+      },
+      "tags": [
+        "Big-Bad"
+      ]
+    },
+    {
+      "text": "Your body moves against your will. Every muscle twitches under its control. You’re trapped, a passenger in your own body, your thoughts muffled beneath the entity’s presence. \n\nIt forces you to look in the mirror at your dresser. You don’t recognize yourself anymore—your eyes, your face, everything feels foreign. A faint reflection of the entity’s many //many// eyes flickers in the glass, a reminder of who is in control now.\n\n//No…  //\n\n<span style=\"margin-left: 2em\">''//No!//''</span>\n\nYou shout into the void of your own mind, but your voice goes unheard. You’re still *there*, somewhere deep inside, but [[powerless to stop it.->Big Bad Encounter - Prey]] The entity turns your body, flexing your fingers like it’s testing out a new tool.",
+      "links": [
+        {
+          "name": "powerless to stop it.",
+          "link": "Big Bad Encounter - Prey",
+          "pid": "12"
+        }
+      ],
+      "name": "Big Bad Encounter - Suppressed",
+      "pid": "17",
+      "position": {
+        "x": "500",
+        "y": "2400"
+      },
+      "tags": [
+        "Big-Bad"
+      ]
+    },
+    {
+      "text": "You take a deep breath, and force yourself to speak. “Hello?” The word comes, barely above a whisper. You clear your throat and try again, louder this time: “Who’s there?”\n\nThe sound of your own voice echoes back at you. For a moment, there’s nothing—no response, no movement, just the lingering quiet.\n\nAnd then—//''scratch, scratch, scratch.''// It’s the same soft noise as before, but now it sounds closer. You tense, the hairs on the back of your neck stand on end. \n\nIt’s ridiculous, but you can’t shake the feeling that something has shifted. Like the room itself is holding its breath, waiting.\n\nThe [[air feels heavy, thickening->Big Bad - Echoes in the Dark]] until it’s hard to breathe.\n\n[[You shiver, rubbing your arms. ->Call Out 02]]",
+      "links": [
+        {
+          "name": "air feels heavy, thickening",
+          "link": "Big Bad - Echoes in the Dark",
+          "pid": "2"
+        },
+        {
+          "name": "You shiver, rubbing your arms. ",
+          "link": "Call Out 02",
+          "pid": "19"
+        }
+      ],
+      "name": "Call Out 01",
+      "pid": "18",
+      "position": {
+        "x": "1900",
+        "y": "1400"
+      }
+    },
+    {
+      "text": "When did it get so cold? The room was warm enough just a moment ago, but now the air feels sharp and biting, like the dead of winter.\n\nIt’s like your words pulled something out of the shadows—you invited something in. Something you can’t see, but that’s definitely, aware of you. Watching...\n\nYou swallow. What was that noise? What’s making it, and why does it feel like it’s—responding?\n\nYou don’t have a choice now. You have to find out. You can’t just sit here, shivering in the dark, pretending everything’s fine. And you definitely can’t go back to sleep, not like this.\n\n[[It’s time to get that hammer.->Check It Out 01]]",
+      "links": [
+        {
+          "name": "It’s time to get that hammer.",
+          "link": "Check It Out 01",
+          "pid": "20"
+        }
+      ],
+      "name": "Call Out 02",
+      "pid": "19",
+      "position": {
+        "x": "1900",
+        "y": "1600"
+      },
+      "tags": [
+        "Sleep-Rats-Found",
+        "Big-Bad"
+      ]
+    },
+    {
+      "text": "Getting the hammer is easier said than done. \n\nEspecially when getting out of your room might take all of the courage you can muster.\nYou glance at the door and take a deep breath, steeling your nerves.\n\nYou unlock the door, and step into the hallway, ignoring the heavy feeling in the air that seems to follow you out there. \n\nThe bathroom lights flicker to life when you flip the switch, and you close the door behind you.\n\nLooking through the vanity, the hammer is exactly where you left it, nestled among cleaning supplies and old junk. [[You grab it->Check It Out 02]] and feel its weight in your hands, solid and reassuring—something real.",
+      "links": [
+        {
+          "name": "You grab it",
+          "link": "Check It Out 02",
+          "pid": "21"
+        }
+      ],
+      "name": "Check It Out 01",
+      "pid": "20",
+      "position": {
+        "x": "1500",
+        "y": "1500"
+      },
+      "tags": [
+        "Sleep-Rats-Found"
+      ]
+    },
+    {
+      "text": "As you make your way back to your room, [[that strange pressure follows you.->Big Bad - Echoes in the Dark]] It clings to the walls, to your skin, but you push through it, pretending not to notice. You know where the sound is coming from now—the wall behind your nightstand. You just need to deal with it, and then you can sleep.\n\nBack in your room, you lock the door behind you, and turn on all the lights. \n\nThe room is filled with warm light and the uneasy feeling fades just a bit.\n\nYou settle on your knees in front of the wall, the cold wood pressing against your legs. And with a deep breath, you raise the hammer and [[strike the wall.->Check It Out 03]]",
+      "links": [
+        {
+          "name": "that strange pressure follows you.",
+          "link": "Big Bad - Echoes in the Dark",
+          "pid": "2"
+        },
+        {
+          "name": "strike the wall.",
+          "link": "Check It Out 03",
+          "pid": "22"
+        }
+      ],
+      "name": "Check It Out 02",
+      "pid": "21",
+      "position": {
+        "x": "1500",
+        "y": "1700"
+      },
+      "tags": [
+        "Sleep-Rats-Found"
+      ]
+    },
+    {
+      "text": "The dull thud of hammer meeting the wall is satisfying. Each swing fills you with confidence and drives the persistent scratching further from your mind. \n\nWith one final, harder swing, paint and plaster crumble, revealing a hole in the wall. The noise stops suddenly, but you don’t feel relieved. Not yet.\n\nYou lean in closer to inspect it, holding your breath. Through the hole, you see movement. You reach out for you phone, shining your flashlight into the hole. There you find two small, familiar shapes. Rats—your neighbor’s, the ones that have been missing for days.\n\nYou can’t just leave them there, you have to [[get them out!->Check It Out 04]]",
+      "links": [
+        {
+          "name": "get them out!",
+          "link": "Check It Out 04",
+          "pid": "23"
+        }
+      ],
+      "name": "Check It Out 03",
+      "pid": "22",
+      "position": {
+        "x": "1700",
+        "y": "1700"
+      },
+      "tags": [
+        "Sleep-Rats-Found"
+      ]
+    },
+    {
+      "text": "If you could make the hole bigger, you’d be able to reach them. Maybe even pull them out.\n\nYou steel yourself, raising the hammer again. The first few swings send dust flying. The rats squeal, retreating further into the wall. But you don’t stop; this is the only way to help them.\n\nThe hole widens with each swing. Your muscles ache, but you keep going. Just a bit more, and you’ll be able to get your arm and shoulder inside.\n\nAs you lift the hammer for one final blow, you hear a faint sound—like a [[soft whispering->Big Bad - Echoes in the Dark]]—from within the wall, just behind where the rats are huddled. You hesitate, straining to hear, but the rats’ frantic squeaks drown it out. Was it just your imagination?\n\nYou swing the hammer down again, the hole now wide open. The rats are right there, pressed against the far side of the space. [[You reach in->Check It Out 05]], fingers brushing fur, but they flinch away, [[something behind them shifting in the shadows.->Big Bad - Echoes in the Dark]]",
+      "links": [
+        {
+          "name": "soft whispering",
+          "link": "Big Bad - Echoes in the Dark",
+          "pid": "2"
+        },
+        {
+          "name": "You reach in",
+          "link": "Check It Out 05",
+          "pid": "24"
+        },
+        {
+          "name": "something behind them shifting in the shadows.",
+          "link": "Big Bad - Echoes in the Dark",
+          "pid": "2"
+        }
+      ],
+      "name": "Check It Out 04",
+      "pid": "23",
+      "position": {
+        "x": "1500",
+        "y": "1900"
+      },
+      "tags": [
+        "Sleep-Rats-Found",
+        "Big-Bad"
+      ]
+    },
+    {
+      "text": "Slowly, you extend your fingers, murmuring softly to calm them down.\n\n“It’s okay… I’ve got you.”\n\nThe smaller rat twitches, then edges closer. It sniffs at your fingertips. Holding your breath, you wrap your fingers around it and pull it free. The rat squirms, but doesn’t fight. You lift it out, cradling it against your chest. It’s dirty and a bit thin, but it’s warm and alive.\n\nOne down. One more to go.\n\nYou set the first rat aside, then reach in again. The second rat is a little bigger, more wary, but it still shuffles forward. Your fingers brush its side, you hook your hand around its belly and lift it free.\n\nYou can’t believe it, you actually got them out. Relief floods through you as you set the second rat beside the first. \n\nThey huddle together, sniffling and squeaking softly. [[You smile.->Rats! 01]]",
+      "links": [
+        {
+          "name": "You smile.",
+          "link": "Rats! 01",
+          "pid": "44"
+        }
+      ],
+      "name": "Check It Out 05",
+      "pid": "24",
+      "position": {
+        "x": "1700",
+        "y": "1925"
+      },
+      "tags": [
+        "Sleep-Rats-Found"
+      ]
+    },
+    {
+      "text": "You force yourself to turn away, stepping back into the hallway. There's an urge to look again, to make sure there’s nothing out there.\n\nBut you ignore it.\n\nYou head upstairs, each step feeling heavier than the last. That uneasy pressure still there when you reach your bedroom.\n\nYou shake it off. You’re just being paranoid. There’s //nothing // out of place, and no reason to be on edge.\n\nStill, you find yourself glancing over your shoulder, before you shut the door behind you.\n\nIt’s fine. //''You’re fine.''// It’s just going to be a quiet night alone. \nNothing weird, nothing dangerous.\n\nJust...you and an empty house.\n\n[[You start getting into bed->Ignore it 02]]\n\n",
+      "links": [
+        {
+          "name": "You start getting into bed",
+          "link": "Ignore it 02",
+          "pid": "37"
+        }
+      ],
+      "name": "Check It Out 3 - False Sense of Safety",
+      "pid": "25",
+      "position": {
+        "x": "1350",
+        "y": "1200"
+      },
+      "tags": [
+        "Window"
+      ]
+    },
+    {
+      "text": "You approach the front door again.\n\nYour parents have only been gone for a few minutes, but it already feels so //different.// The silence is heavier, like something is filling the room.\n\nIt’s just your imagination. You’re sure of it. But still…\n\nYou turn the knob once more to check. It doesn't budge. You check that the front door’s deadbolt is firmly in place.\n\n[[Satisfied, you turn away->Check It Out 3 - False Sense of Safety]], but that sensation prickles at the back of your neck again. An uneasy weight, like eyes on your back.\n\nWithout thinking, you look toward the window near the front door. The curtains hide whatever’s outside...\n\nYou pause, hand hovering near the edge of the fabric.\n\nIf you [[//looked//->Check the Lock - Through the Glass]]...\n\nWould something be looking back?",
+      "links": [
+        {
+          "name": "Satisfied, you turn away",
+          "link": "Check It Out 3 - False Sense of Safety",
+          "pid": "25"
+        },
+        {
+          "name": "//looked//",
+          "link": "Check the Lock - Through the Glass",
+          "pid": "27"
+        }
+      ],
+      "name": "Check the Lock",
+      "pid": "26",
+      "position": {
+        "x": "1300",
+        "y": "700"
+      },
+      "tags": [
+        "Window"
+      ]
+    },
+    {
+      "text": "You hesitate, as you reach for the curtain. The room feels too still, every creak of the floorboards is too loud.\n\nSlowly, you pull the fabric aside.\n\nYour peer out into the front yard. There’s nothing there—just the empty street, and swaying trees.\n\nBut you still feel that weight on your chest.\n\nYou squint, looking for //something// —movement, a shadow, a flicker in the corner of your vision—but there’s only stillness. A suffocating stillness.\n\nMaybe it really is just nerves.\n\nBut then, just as you’re about to step back, something catches your eye—right at the edge of the yard. A dark shape, too far away to make out clearly, but it’s gone before you can blink.\n\nThe weight in your chest becomes a sharp pang, and you clutch your chest.\nDid you really see that? Or is your mind just playing tricks?\n\nYou close the curtain, and back away, before turning around and [[running upstairs.->Run Upstairs 01]]\n\nBut [[the feeling doesn’t go away.->Look Out the Window 2]]\n",
+      "links": [
+        {
+          "name": "running upstairs.",
+          "link": "Run Upstairs 01",
+          "pid": "45"
+        },
+        {
+          "name": "the feeling doesn’t go away.",
+          "link": "Look Out the Window 2",
+          "pid": "38"
+        }
+      ],
+      "name": "Check the Lock - Through the Glass",
+      "pid": "27",
+      "position": {
+        "x": "1100",
+        "y": "900"
+      },
+      "tags": [
+        "Window"
+      ]
+    },
+    {
+      "text": "You sit up, and get out of bed. One by one, you turn on every light in the room, each small glow chasing away the shadows until your room is bathed in warm light. \n\nYou know it’s irrational, but you can’t help it. The light makes you feel safer. Like whatever’s out there can’t reach you as long as you stay here, sat in your bed, in this tiny bubble of brightness. \n\nStill, the sound lingers in your memory—that awful scratching noise from within the walls. Your hands are clenched at your sides, nails digging into your palms. You told yourself that hiding in here was the safest option, but even now your body is so stiff you can’t move a muscle.\n\n[[''Focus''->Cope 01 - Turn On the Lights 02]] you tell yourself.\n\n",
+      "links": [
+        {
+          "name": "''Focus''",
+          "link": "Cope 01 - Turn On the Lights 02",
+          "pid": "29"
+        }
+      ],
+      "name": "Cope 01 - Turn On the Lights 01",
+      "pid": "28",
+      "position": {
+        "x": "2200",
+        "y": "1500"
+      },
+      "tags": [
+        "Sleep-No-Rats"
+      ]
+    },
+    {
+      "text": "You need to calm down. You glance around the room, taking in the comforting clutter: the desk piled with books and papers, the bed half-buried in stuffed animals, the bookshelves sagging under the weight of books, and your walls covered in posters. \n\nYou take a deep breath, there has to be a way to make this go away. To ignore it. You don’t have to open the door or know what’s in the walls. You don’t have to see what’s out there. You just need to find something, anything to keep your mind busy. \n \nYour gaze falls on a shelf, landing on [[a book->Cope 02 - Reading 01]] you’ve read before, something comfortable and familiar enough to drown out any stray thoughts. \n\nOr  [[you could check...->Check It Out 01]] There’s a hammer under the kitchen sink. Just make one little hole and take a look. If you know there’s nothing there, maybe you can finally stop jumping at shadows...\n\nMaybe it's safer to [[ call out->Call Out 02]]? The idea tugs at you—[[a voice inside your head whispering->Big Bad - Echoes in the Dark]]  , “Call out, just to see if something answers back.” It’s a ridiculous thought. But the silence feels so heavy… What if there ''//is// ''something listening?",
+      "links": [
+        {
+          "name": "a book",
+          "link": "Cope 02 - Reading 01",
+          "pid": "30"
+        },
+        {
+          "name": "you could check...",
+          "link": "Check It Out 01",
+          "pid": "20"
+        },
+        {
+          "name": " call out",
+          "link": "Call Out 02",
+          "pid": "19"
+        },
+        {
+          "name": "a voice inside your head whispering",
+          "link": "Big Bad - Echoes in the Dark",
+          "pid": "2"
+        }
+      ],
+      "name": "Cope 01 - Turn On the Lights 02",
+      "pid": "29",
+      "position": {
+        "x": "2400",
+        "y": "1500"
+      },
+      "tags": [
+        "Sleep-No-Rats",
+        "Sleep-Rats-Found",
+        "Big-Bad"
+      ]
+    },
+    {
+      "text": "You pick up a book and settle into your blankets again, hoping that the story will distract you. You turn to a familiar chapter, eyes skimming over the lines. The story unfolds, and each word pulls you a little further away from your nerves.\n\nBut as your eyes drift over the lines, you catch yourself pausing every few sentences, glancing around the room, [[waiting for something.->Big Bad - Echoes in the Dark]]\n\nNothing’s changed. Of course, nothing’s changed. But still…\n\nYou let out a breath, focusing harder. Just—read. Read and relax. You force yourself through one page, then another. The story is compelling, drawing you in—but there’s an itch beneath your skin, something there that keeps tugging your attention back to the present.\n\n[[Why can’t you concentrate?->Cope 02 - Reading 02]]",
+      "links": [
+        {
+          "name": "waiting for something.",
+          "link": "Big Bad - Echoes in the Dark",
+          "pid": "2"
+        },
+        {
+          "name": "Why can’t you concentrate?",
+          "link": "Cope 02 - Reading 02",
+          "pid": "31"
+        }
+      ],
+      "name": "Cope 02 - Reading 01",
+      "pid": "30",
+      "position": {
+        "x": "2200",
+        "y": "1700"
+      },
+      "tags": [
+        "Sleep-No-Rats",
+        "Big-Bad"
+      ]
+    },
+    {
+      "text": "Your ears strain to hear a noise that’s not there—at least, you hope it’s not. Every small creak of the old house  makes you twitch, eyes darting to the corners of the room. \n\nIt’s ridiculous really. You’re safe. Everything’s fine.\n\nYou shake yourself, squeezing the book tighter. You’re letting your mind wander, imagining things that aren’t real. But the tension won’t let go. It’s like the book is mocking you now, daring you to keep ignoring what’s really on your mind.\n\nYou could try to [[listen to some music instead->Cope 03 - Music 01]], force yourself to focus on something else. Ignore it.\n\nOr you could turn to the wall, [[put your ear against it and listen->Check It Out 01]]. Did the sound really stop, or did it just get quieter? Maybe if you took a peek, you could finally see what’s there. If there’s anything at all...",
+      "links": [
+        {
+          "name": "listen to some music instead",
+          "link": "Cope 03 - Music 01",
+          "pid": "32"
+        },
+        {
+          "name": "put your ear against it and listen",
+          "link": "Check It Out 01",
+          "pid": "20"
+        }
+      ],
+      "name": "Cope 02 - Reading 02",
+      "pid": "31",
+      "position": {
+        "x": "2400",
+        "y": "1700"
+      },
+      "tags": [
+        "Sleep-No-Rats",
+        "Sleep-Rats-Found"
+      ]
+    },
+    {
+      "text": "You grab your headphones from your nightstand, slipping them on with trembling hands. The moment you hit play, a soothing wave of sound washes over you. You let out a shaky breath, the tension in your shoulders easing slightly as the music drowns out the oppressive silence.\n\nIt’s better. Much better. There’s no scratching, no scraping. Just the steady rhythm of your favorite songs. You close your eyes, and take it in.\n\nBut your mind won’t be still. It drifts back to the memory of that noise, trying to imagine its source. There’s a part of you that wants to know. That needs to know. What if it’s something hidden—something lurking inside the walls? You picture yourself tearing away the drywall, hammer swinging, uncovering… what?\n\nYou push those thoughts away again. There’s nothing there and there’s no reason to look. You bury yourself deeper in your blankets, squeezing your eyes shut, willing the exhaustion to take you. But it doesn’t. Not at first. You lie there, listening to the music, letting the steady beat dull the edge of your thoughts. Minutes tick by, your heart slowly easing back into a regular rhythm.\n\n[[You yawn->Cope 3 - Music 02]]",
+      "links": [
+        {
+          "name": "You yawn",
+          "link": "Cope 3 - Music 02",
+          "pid": "33"
+        }
+      ],
+      "name": "Cope 03 - Music 01",
+      "pid": "32",
+      "position": {
+        "x": "2200",
+        "y": "1900"
+      },
+      "tags": [
+        "Sleep-No-Rats"
+      ]
+    },
+    {
+      "text": "And then a wave of exhaustion hits you, the kind that settles deep in your bones, and you sag deeper into the mattress. You look at the clock, 3:00AM, you’ve been at this for hours. Why are you even still awake?\n\nMaybe… maybe you should just let it go. \n\nYou can feel the pull of sleep now, gentle and insistent, tugging at the corners of your mind. You yawn, your limbs heavy, muscles aching from the strain of holding onto that tension for so long. Maybe you should just… stay here. Let the music pull you under, let the weariness swallow you whole. \n\nYou can figure it out tomorrow.'' //Or never...//''\n\nYou take a slow breath, caught between two thoughts: Should you [[get up and smash through the wall,->Check It Out 01]] find out what’s really there, or should you [[stay in bed,->Sleeping End No Rats 01]] close your eyes, and let the warmth and music finally lull you to sleep?",
+      "links": [
+        {
+          "name": "get up and smash through the wall,",
+          "link": "Check It Out 01",
+          "pid": "20"
+        },
+        {
+          "name": "stay in bed,",
+          "link": "Sleeping End No Rats 01",
+          "pid": "48"
+        }
+      ],
+      "name": "Cope 3 - Music 02",
+      "pid": "33",
+      "position": {
+        "x": "2400",
+        "y": "1900"
+      },
+      "tags": [
+        "Sleep-No-Rats",
+        "Sleep-Rats-Found"
+      ]
+    },
+    {
+      "text": "The door shuts behind them with a soft click, and you’re left standing in the entryway. The old house seems to exhale around you, settling into silence as the familiar sound of your parents’ cars fade down the street. You catch a glimpse of their taillights through the window—one final flash of red before they disappear into the night.\n\n“See you tomorrow,” you murmur to yourself. You should be used to this by now—being home alone. It’s not like it’s the first time. Still, tonight feels different somehow...\n\nMaybe it’s nothing at all. \n\nYou turn away, and head back toward the living room. Everything is normal. The walls are the same familiar shade of blue they always are. The lights overhead are bright and steady. There’s no reason to feel on edge.\n\nBut then—\n\n//''[[[Scratch.->Goodnight 02]]]''//",
+      "links": [
+        {
+          "name": "[Scratch.",
+          "link": "Goodnight 02",
+          "pid": "35"
+        }
+      ],
+      "name": "Goodnight 01",
+      "pid": "34",
+      "position": {
+        "x": "1500",
+        "y": "300"
+      },
+      "tags": [
+        "Sleep-No-Rats",
+        "Sleep-Rats-Found",
+        "Window"
+      ]
+    },
+    {
+      "text": "The sound is faint, almost too soft to notice. You freeze, every muscle tensing, ears straining to catch the sound again. But there’s nothing. Silence, thick and heavy. Did you just imagine it? You’re not sure, but—\n\n//''Scratch.''//\n''<div style=\"margin-left: 2em\">//Scratch.//</div>''\nThis time, it’s clearer. Low and dry, like something sharp dragging lightly across wood. Your heart starts to beat rapidly in your chest. What is that noise?\n\nYou turn, your gaze darts to the front door. It’s closed, but is it locked? Are all the locks secure?\n\nYour breath catches, a strange sense of urgency rising in your chest. Maybe you should check. Just to be safe. But… what if someone’s outside? What if you open the door and—\n\nNo. Don’t think about it. Just decide.\n\n[[Do you double-check the locks->Check the Lock]], or [[turn and run upstairs ->Run Upstairs 01]], heart pounding?",
+      "links": [
+        {
+          "name": "Do you double-check the locks",
+          "link": "Check the Lock",
+          "pid": "26"
+        },
+        {
+          "name": "turn and run upstairs ",
+          "link": "Run Upstairs 01",
+          "pid": "45"
+        }
+      ],
+      "name": "Goodnight 02",
+      "pid": "35",
+      "position": {
+        "x": "1500",
+        "y": "500"
+      },
+      "tags": [
+        "Sleep-No-Rats",
+        "Sleep-Rats-Found",
+        "Window"
+      ]
+    },
+    {
+      "text": "You force yourself to look away from the door. No. You’re not going to acknowledge it. The sound isn’t real. It can’t be. If you just pretend it’s not there, if you focus on something, it’ll stop. It has to stop.  \n\nYour hands shake slightly as you push yourself up from your desk chair. You glance toward your bed—warm and inviting. A safe place to bury yourself and shut out the rest of the world. You make your way over and slide under the blankets.  \n\nThe mattress dips gently under your weight, and you pull the covers up, tight around your shoulders. The familiar comfort surrounds you, and you let out a long, shaky breath, trying to relax. \n\nEverything’s fine. There’s nothing to be scared of.  \n\nThe room is still and silent. Just the soft hum of electronics and the distant creak of the house settling. You close your eyes, forcing your breathing to slow. With each exhale, the tension seeps out of your muscles bit by bit, until finally, finally, your heartbeat eases, and you start to believe it.  \n\nBut then—  \n\n//''Scratch.''//\n\n[[Your eyes snap open. ->Ignore it 02]]",
+      "links": [
+        {
+          "name": "Your eyes snap open. ",
+          "link": "Ignore it 02",
+          "pid": "37"
+        }
+      ],
+      "name": "Ignore It 01",
+      "pid": "36",
+      "position": {
+        "x": "1900",
+        "y": "1000"
+      },
+      "tags": [
+        "Sleep-No-Rats",
+        "Sleep-Rats-Found"
+      ]
+    },
+    {
+      "text": "//''Scratch.''//\n\n//''Scratch.''//\n\nThe noise is louder now, sharper. In the walls—near the headboard of your bed. A dry, scraping sound like something clawing against the drywall. You freeze.\nWhat—what is that?  \n\nThe urge to do something surges up, almost overwhelming. You could [[call out->Call Out 01]]. Demand to know what’s there. Maybe it’s nothing, just your imagination, but… what if it’s not?  \n\nYou sit up in your bed, and wrap your blankets around yourself. Or you could get up, [[take a hammer to that wall->Check It Out 01]] and check. Face it head-on, and see for yourself what’s making that awful noise.  \n\nBut there’s a third option too. You could just...[[drown it out.->Cope 01 - Turn On the Lights 01]] Get up. Turn on every single light. Flood the room with brightness until there’s no room for shadows, no room for doubt, and just make it all go away.",
+      "links": [
+        {
+          "name": "call out",
+          "link": "Call Out 01",
+          "pid": "18"
+        },
+        {
+          "name": "take a hammer to that wall",
+          "link": "Check It Out 01",
+          "pid": "20"
+        },
+        {
+          "name": "drown it out.",
+          "link": "Cope 01 - Turn On the Lights 01",
+          "pid": "28"
+        }
+      ],
+      "name": "Ignore it 02",
+      "pid": "37",
+      "position": {
+        "x": "1900",
+        "y": "1200"
+      },
+      "tags": [
+        "Sleep-No-Rats",
+        "Sleep-Rats-Found"
+      ]
+    },
+    {
+      "text": "Before you know it, you’re heading back downstairs. The locks on the back door, the kitchen window, the front door— //all// secure. But the pressure on your chest continues to grow.\n\nYou glance around, feeling your pulse race. //What// is it? //Where// is it?\n\nThe empty rooms around you seem darker now, the silence almost oppressive. Every shadow looks deeper, every corner sharper, and for a split second, you think you see something moving at the edge of your vision.\n\nYou whirl around, heart pounding. There’s nothing there. //There’s nothing there.//\nThe feeling won’t let you go, but [[you can't stay here all night.->Check It Out 3 - False Sense of Safety]]",
+      "links": [
+        {
+          "name": "you can't stay here all night.",
+          "link": "Check It Out 3 - False Sense of Safety",
+          "pid": "25"
+        }
+      ],
+      "name": "Look Out the Window 2",
+      "pid": "38",
+      "position": {
+        "x": "1100",
+        "y": "1200"
+      },
+      "tags": [
+        "Window"
+      ]
+    },
+    {
+      "text": "You grab a handful of crumbs and kneel back down, sprinkling the crumbs in front of them. The smaller rat is the first to move, sniffing before nibbling at the food. Soon the bigger one joins in, scooping up bits of cheese dust and licking it off its paws.\n\nYou can’t help the smile tugging at your lips. The tension in the room seems to ease, just a little.\n\nMaybe[[ everything’s okay->Rats 03]] after all.",
+      "links": [
+        {
+          "name": " everything’s okay",
+          "link": "Rats 03",
+          "pid": "40"
+        }
+      ],
+      "name": "Rats 02",
+      "pid": "39",
+      "position": {
+        "x": "1900",
+        "y": "2100"
+      },
+      "tags": [
+        "Sleep-Rats-Found"
+      ]
+    },
+    {
+      "text": "You can’t just let them roam around your room. You look around, searching for a safe spot for them to spend the night and pull out one of the storage bins you keep under your bed.\n\nYou set it between your desk and nightstand. \nGrabbing an old blanket from the closet, you spread it inside.\n\nPleased with the setup, you set the rats down in the container.\nOne of them curls up in the corner. The other burrows into the folds of fabric. They squeak softly, noses twitching, and after a few moments, they finally seem to settle down. \n\n[[You should too.->Rats 04]]",
+      "links": [
+        {
+          "name": "You should too.",
+          "link": "Rats 04",
+          "pid": "41"
+        }
+      ],
+      "name": "Rats 03",
+      "pid": "40",
+      "position": {
+        "x": "1700",
+        "y": "2300"
+      },
+      "tags": [
+        "Sleep-Rats-Found"
+      ]
+    },
+    {
+      "text": "The [[heaviness in the air->Big Bad - Echoes in the Dark]] hasn’t gone away completely—it’s still there, thick and cold, clinging to the back of your neck—but you ignore it. It’s probably just the stress of the night catching up with you.\n\nYou’ll feel better in the morning.\n\nYou kneel beside the crate, brushing your fingers over the blanket. The rats shift, pressing against your touch, and for the first time tonight, the room feels… peaceful.\n\nMaybe you can [[let your guard down->Rats 05]]. Just for a little while.",
+      "links": [
+        {
+          "name": "heaviness in the air",
+          "link": "Big Bad - Echoes in the Dark",
+          "pid": "2"
+        },
+        {
+          "name": "let your guard down",
+          "link": "Rats 05",
+          "pid": "42"
+        }
+      ],
+      "name": "Rats 04",
+      "pid": "41",
+      "position": {
+        "x": "1900",
+        "y": "2300"
+      },
+      "tags": [
+        "Sleep-Rats-Found",
+        "Big-Bad"
+      ]
+    },
+    {
+      "text": "You push yourself to your feet and crawl into bed. The mattress creaks softly beneath your weight. You turn off you bedside lamp, and you wrap yourself in your blankets, blinking in the sudden darkness.\n\nThe room feels so much bigger now. The hole in the wall now completely out of sight. You lift your head to get a better look at it, and keep your eyes fixed on it for a while, almost expecting to see movement—something creeping out of the dark, some shadow shifting in the corner.\n\nBut nothing moves. Nothing breathes except for you and the rats.\n\nYou close your eyes, letting the tension drain away. It’s over now. The rats are safe, and whatever that awful, pressing feeling is, you can deal with it later. You’re too tired to care right now. [[Exhaustion pulls at you->Rats 06]], tugging you deeper into the warmth of your blankets.",
+      "links": [
+        {
+          "name": "Exhaustion pulls at you",
+          "link": "Rats 06",
+          "pid": "43"
+        }
+      ],
+      "name": "Rats 05",
+      "pid": "42",
+      "position": {
+        "x": "1700",
+        "y": "2500"
+      },
+      "tags": [
+        "Sleep-Rats-Found"
+      ]
+    },
+    {
+      "text": "As your breathing slows, [[the heaviness in the room seems to thicken.->Big Bad - Echoes in the Dark]] It presses down, wrapping around your chest, weighing you down. You shiver, tugging the covers closer, but force yourself to let it go.\n\nIt’s nothing.\n\nJust the lingering stress. Just the silence of a long, exhausting night.\n\nYou roll onto your side, facing away from the broken wall. The blankets are soft and warm, the pillow cool against your cheek. You can feel sleep tugging at you, pulling you deeper and deeper.\n\n“Just sleep,” you whisper to yourself.\n\nThe rats shift in their crate, rustling softly. You smile.\n\nThe room feels distant, heavy and oppressive, but you let it slip away. Slowly, you relax, sinking into the mattress.\n\nAnd as you drift off, the last thing you hear is a faint, barely audible noise—like something breathing in the corner of the room.\n\nBut you’re too tired to care.\n\n[[Sleep takes you before the darkness can.->Sleeping End Rats 01]]",
+      "links": [
+        {
+          "name": "the heaviness in the room seems to thicken.",
+          "link": "Big Bad - Echoes in the Dark",
+          "pid": "2"
+        },
+        {
+          "name": "Sleep takes you before the darkness can.",
+          "link": "Sleeping End Rats 01",
+          "pid": "50"
+        }
+      ],
+      "name": "Rats 06",
+      "pid": "43",
+      "position": {
+        "x": "1900",
+        "y": "2500"
+      },
+      "tags": [
+        "Sleep-Rats-Found",
+        "Big-Bad"
+      ]
+    },
+    {
+      "text": "You cradle the two rats close to your chest. They’re trembling, but they’re safe. You breathe out slowly, shoulders relaxing for the first time all night.\n\n“It’s okay now,” you murmur softly, stroking the smaller one’s back. It sniffs your shirt, then nuzzles in closer, finally relaxing. The larger rat twitches its nose, still wary, but neither of them tries to move to run. You glance back at the hole in the wall, but force yourself to look away. It’s over now.\n\nYou got them out.\nAnd you’ll definitely have to explain the hole to your parents in the morning.\n\nGingerly, you set the rats on the floor beside you, keeping your movements slow so they don’t spook.\n\nYour gaze lands on the [[half-eaten snack->Rats 02]] on your desk. They probably shouldn’t have it, but it’s better than nothing.",
+      "links": [
+        {
+          "name": "half-eaten snack",
+          "link": "Rats 02",
+          "pid": "39"
+        }
+      ],
+      "name": "Rats! 01",
+      "pid": "44",
+      "position": {
+        "x": "1700",
+        "y": "2100"
+      },
+      "tags": [
+        "Sleep-Rats-Found"
+      ]
+    },
+    {
+      "text": "You sprint up the stairs, and don’t stop until you’re inside your room. You slam the door shut behind you, and twist the knob to make sure it’s locked. Only then do you let yourself breathe out, shoulders sagging as you let out a breath you didn’t know you were holding.\n\nIt’s fine. //''You’re fine.''// \n\nYou repeat the words to yourself as you sink down into the chair in front of your desk, running a hand through your hair. Your room feels small and safe, the way it always does—a soft space tucked away from the rest of the world. \n\nYou just need to calm down.\n\nYou glance around, trying to settle your thoughts. There’s the familiar clutter of books stacked haphazardly on the shelves, the mess of papers, pens, and trinkets scattered across the desk. Your laptop sits in its usual spot, screen dark and quiet. \n\nNothing is out of place. Nothing is wrong.\n\nBut your pulse won’t slow. You sit there for a long moment, staring blankly at the desktop, waiting for the frantic beat of your heart to ease. And then—\n\n//''Scratch.''//\n\n[[You freeze.->Run Upstairs 02]]",
+      "links": [
+        {
+          "name": "You freeze.",
+          "link": "Run Upstairs 02",
+          "pid": "46"
+        }
+      ],
+      "name": "Run Upstairs 01",
+      "pid": "45",
+      "position": {
+        "x": "1700",
+        "y": "700"
+      },
+      "tags": [
+        "Sleep-No-Rats",
+        "Sleep-Rats-Found"
+      ]
+    },
+    {
+      "text": "Your body goes rigid. The sound is faint, like a dry rasp against the floorboards—so soft you almost didn’t catch it. But it’s there.\n\nYou hold your breath, ears straining.\n\nIt’s the same noise as before, the one that made you run. The same low, insistent sound—closer now.\n\nYour chest tightens, panic welling up again. What is that? Should you…? No. No, it’s nothing. You’re just tired.\n\nYou force yourself to sit back, keeping your eyes fixed on the laptop screen. If you just ignore it, if you pretend you didn’t hear anything, it’ll go away. won’t it?\n\nBut then the sound comes again. An insistent scratching.\n\n[[You sit up, lean forward, and listen closely->Sit Up and Listen 01]]. Maybe you’ll figure out what’s making that noise. Maybe it’s just something in the walls.\n\nOr you could keep looking forward. Look anywhere but the door. Force yourself to act normal. \n\nIf you could just get to [[sleep->Ignore It 01]], everything would be okay.",
+      "links": [
+        {
+          "name": "You sit up, lean forward, and listen closely",
+          "link": "Sit Up and Listen 01",
+          "pid": "47"
+        },
+        {
+          "name": "sleep",
+          "link": "Ignore It 01",
+          "pid": "36"
+        }
+      ],
+      "name": "Run Upstairs 02",
+      "pid": "46",
+      "position": {
+        "x": "1700",
+        "y": "900"
+      },
+      "tags": [
+        "Sleep-No-Rats",
+        "Sleep-Rats-Found"
+      ]
+    },
+    {
+      "text": "Body tense, ears straining to hear another sound, but all you can hear is your own breathing, shallow and unsteady.\n\nThen… there—a noise.\n\nIt’s faint, a light scratching sound. You freeze, listening harder. The noise is coming from the walls. Each tiny scrape sends a shiver racing down your spine.\n\nWhat is it?\n\nYou glance toward your bedroom door, instincts screaming at you to stay put, to hide. But some stubborn part of you, wants to know. \n\nWhat’s making that sound? Why is it still there?\n\nMaybe you’re [[imagining things.->Ignore It 01]] Or maybe [[you should do something.->Check It Out 01]] But leaving your room means going out into the dark...",
+      "links": [
+        {
+          "name": "imagining things.",
+          "link": "Ignore It 01",
+          "pid": "36"
+        },
+        {
+          "name": "you should do something.",
+          "link": "Check It Out 01",
+          "pid": "20"
+        }
+      ],
+      "name": "Sit Up and Listen 01",
+      "pid": "47",
+      "position": {
+        "x": "1500",
+        "y": "1025"
+      }
+    },
+    {
+      "text": "You wake up slowly the next morning, light filtering through your curtains. \n\nFor a moment you just lie there, your mind still hazy from the night before. But the tension from last night is gone, replaced by a warm sense of relief. Although slightly disappointed in yourself giving into the pull of sleep the night before, you can’t stay mad. It’s morning, you made it through and that’s more than enough.\n\nYawning, you sit up. Your muscles feel stiff, like you’ve barely moved in hours, but it’s fine. Everything’s fine. You stretch, letting out a long sigh, and glance toward the window. Sunlight spills through, bright and reassuring. There’s no sign of the darkness that seemed to press in on you the night before. No oppressive sense of being watched, no—\n\nYou can hear your parents moving around in the kitchen. Familiar, comforting sounds—pots clanging softly, the murmur of conversation.\nYou smile, content. The house is awake again, filled with the hum of normal life. You start to swing your legs over the edge of the bed, thinking about breakfast—maybe pancakes, or toast—when—\n\n''Scratch.''\n\nYou freeze, the sound cutting through the light sounds of the morning. It’s softer now, but unmistakable. Your stomach clenches, a shiver running down your spine. [[That sound.->Sleeping End No Rats 02]] The same one that kept you up, that stole you sleep and filled your mind with anxiety",
+      "links": [
+        {
+          "name": "That sound.",
+          "link": "Sleeping End No Rats 02",
+          "pid": "49"
+        }
+      ],
+      "name": "Sleeping End No Rats 01",
+      "pid": "48",
+      "position": {
+        "x": "2300",
+        "y": "2100"
+      },
+      "tags": [
+        "Sleep-No-Rats"
+      ]
+    },
+    {
+      "text": "''//Crinkle, rustle.//''\n\nIt’s coming from near your desk. Like paper being crumpled and shuffled. What… what is that?\n\nYour breath catches, but this time, you don’t panic. It’s daylight. Whatever was scaring you before can’t hurt you now. Steeling yourself, you slip out of bed and creep toward your desk. The noise grows louder as you get closer, and then—\n\nYou see them. Two small, furry bodies scrambling around in a mess of papers, whiskers twitching, noses darting out as they explore. Rats.\n\nStaring down at them, you realize these aren’t just any rats. They’re the neighbor’s pets, the ones they told you about just a few days ago. They said they’d gotten loose and were probably lost forever.\n\nBut here they are, making a mess of your trash. You stare, part of you wanting to laugh and part of you just annoyed. This was what kept you up all night? This—\n\nYou look to the wall beside your desk. And there, near the head of your bed, is a small hole gnawed into the baseboard. Rat-sized. \n\nYou slump back on your bed, rats in hand. All that fear and tension, the endless worry, the creeping dread—and it was just two escapees tunneling through the wall. \n\nAt least you hope it was.(click: \"At least you hope it was.\")[\n\n''Good End: A Good Nights Rest?''\n\nYou willed yourself to sleep through the night, but something doesn't feel quite right.\n\n(button:\"=X=\")[[Start Over->Goodnight 01]]]",
+      "links": [
+        {
+          "name": "Start Over",
+          "link": "Goodnight 01",
+          "pid": "34"
+        }
+      ],
+      "name": "Sleeping End No Rats 02",
+      "pid": "49",
+      "position": {
+        "x": "2300",
+        "y": "2300"
+      },
+      "tags": [
+        "Sleep-No-Rats"
+      ]
+    },
+    {
+      "text": "You wake slowly, blinking against the sunlight streaming through your curtains. \n\nFor a second, you just lie there, enjoying the warmth and quiet.\n\n“Hey! You awake yet?” Your mom’s voice calls from downstairs. “It’s past noon!”\n\nYou sit up with a jolt. Noon? The memory of last night feels blurry and distant, like a bad dream you’ve almost forgotten.\n\nTurning, you check the container next to you nightstand. The rats are there, curled up together in a soft bundle of fur. You kneel beside them, smiling as they blink up at you sleepily.\n\nStroking their backs gently, they nuzzle into your hand, and you feel some of the tension melt away.\n\nThey made it through the night—and [[so did you.->Sleeping End Rats 02]]",
+      "links": [
+        {
+          "name": "so did you.",
+          "link": "Sleeping End Rats 02",
+          "pid": "51"
+        }
+      ],
+      "name": "Sleeping End Rats 01",
+      "pid": "50",
+      "position": {
+        "x": "1900",
+        "y": "2700"
+      },
+      "tags": [
+        "Sleep-Rats-Found"
+      ]
+    },
+    {
+      "text": "“I’m up, I’m up!” you call out, standing to grab your clothes. \n\nAs you get dressed, you can’t help but steal glances at the rats, Reggie and Blink if you remembered correctly.\n\nYou pull on your hoodie, noticing the hole in the wall. That’ll need fixing, but maybe not today. Today, you have other plans—like returning the rats to your neighbor’s place.\n\nSmiling, you turn and head downstairs, the smell of pancakes drawing you in. It’s a new day, and you’ve got rats to feed.\n\nEverything feels normal again.(click: \"Everything feels normal again.\")[\n\n''Good End: Rat Rescue''\n\nYou rescued the trapped rats and faced your fears.\n\n//Most of them.//\n\n(button:\"=X=\")[[Start Over->Goodnight 01]]]",
+      "links": [
+        {
+          "name": "Start Over",
+          "link": "Goodnight 01",
+          "pid": "34"
+        }
+      ],
+      "name": "Sleeping End Rats 02",
+      "pid": "51",
+      "position": {
+        "x": "1900",
+        "y": "2900"
+      },
+      "tags": [
+        "Sleep-Rats-Found"
+      ]
+    },
+    {
+      "text": "(enchant:?link,\n     (color: #bf360c ) +\n     (hover-style: (color:#8e24aa))\n )\n \n \n(enchant:?page,\n\t(font:\"sans-serif\")\n    )",
+      "name": "pretty",
+      "pid": "52",
+      "position": {
+        "x": "1700",
+        "y": "100"
+      },
+      "tags": [
+        "header"
+      ]
+    }
+  ],
+  "name": "A Night at Home v1.2",
+  "startnode": "34",
+  "creator": "Twine",
+  "creator-version": "2.9.2",
+  "ifid": "2EC879AA-5A43-410D-BE26-7B09CAEE683F"
+}
+

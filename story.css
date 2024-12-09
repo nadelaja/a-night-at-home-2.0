@@ -22,14 +22,15 @@
 .nav a button,
 .nav div {
     font-family: "Della Respira", serif;
+    font-size: 1.14em;
     background-color: #fcf8f0;
     border: none;
     color: #000;
     padding: 15px 32px;
+    margin-right: 10px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 1.05em;
     cursor: pointer;
     width: 125px;
     height: 50px;
@@ -58,9 +59,9 @@
 }*/
 
 #passageText{
-    font-size: 18px;
+    font-size: 1.07em;
     color:#fcf8f0;
-    line-height: 1.5em;
+    line-height: 1.80em;
     font-kerning: auto;
     max-height: 600px;
         /* Set a max height for the container */
@@ -91,7 +92,7 @@ html {
 }
 
 .link {
-    color: #daa520; /*#8fbcbb*/ 
+    color: #e8b73c; /* #f3c759 #8fbcbb*/
     /* A nice blue for links */
     text-decoration: underline;
     cursor: pointer;

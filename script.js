@@ -9,7 +9,7 @@ const lightsOff = ["2", "42"]; // Passages where the lights should page off
 let backButtonUsed = false; 
 
 //Fetch game data from the JSON file standard start or gate selection
-fetch('A _Night_at_Home_JSON copy.json')
+fetch('A _Night_at_Home_JSON_updated.json')
     .then(response => response.json())
     .then(data => {
         gameData = data.passages;
@@ -217,9 +217,7 @@ function lightsOn(pid) {
     pid = String(pid); // Remeber that the PIDS ARE STRINGS
     console.log(`Checking lights for pid: ${pid}, type: ${typeof pid}`);
     const passageText = document.getElementById('passageText');
-    //const linkLightsOn = document.querySelectorAll('.link');
-    const linkLightsOn = document.getElementsByClassName('link')
-
+    const lightsOnLink = document.querySelectorAll('.link');
 
     const isInHistory = passageHistory.includes(pid);  
     const isCurrentPassage = pid === currentPassageId;  // Check the current pid too!
@@ -230,7 +228,24 @@ function lightsOn(pid) {
             document.body.style.backgroundColor = "#fbdfa2";  // Light mode
             document.body.style.color = "#060200";  // Dark text
             passageText.style.color = "#060200";  // Dark Text
-            linkLightsOn.style.color = "#d17a47";
+            lightsOnLink.style.color = "#d17a47";
+
+            // Update link colors
+            lightsOnLink.forEach(link => {
+                lightsOnLink.style.color = '#cc5500';  // Normal link color
+
+                // Hover effect
+                lightsOnLink.addEventListener('mouseover', () => {
+                    lightsOnLink.style.color = "#cc5500";  // Hover color
+                    lightsOnLink.style.textDecoration = 'none';
+                });
+
+                lightsOnLink.addEventListener('mouseout', () => {
+                    lightsOnLink.style.color = "#d17a47";  // Reset color
+                    lightsOnLink.style.textDecoration = 'underline';
+                });
+            });
+        }
             
         } else if (lightsOff.includes(pid)) {
             console.log("Lights off!")
@@ -241,7 +256,6 @@ function lightsOn(pid) {
         console.log("No matching passage found.");
     }
     }
-}
 
 //Fear Bar
 // Categorization
@@ -257,6 +271,8 @@ let fearLevel = 50; // Start at 50% everyone is a little nervous at night...
  * @param {number} pid - The passage ID of the user's choice.
  */
 /*function updateFearBar(pid) {
+    pid = String(pid); // Remeber that the PIDS ARE STRINGS
+
     const fearBar = document.getElementById("fearBar");
 
     // Adjust fear level based on choice's PID
