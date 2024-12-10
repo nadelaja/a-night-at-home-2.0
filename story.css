@@ -64,9 +64,10 @@
     line-height: 1.80em;
     font-kerning: auto;
     max-height: 600px;
-        /* Set a max height for the container */
+    padding-bottom: 5em;
+        /* 
         overflow-y: auto;
-        overflow-x: hidden;
+        overflow-x: hidden;*/
     /*padding: 0px 160px 30px 160px;*/
 }
 

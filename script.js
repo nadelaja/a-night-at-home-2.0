@@ -222,6 +222,10 @@ function lightsOn(pid) {
     const isInHistory = passageHistory.includes(pid);  
     const isCurrentPassage = pid === currentPassageId;  // Check the current pid too!
 
+    document.body.style.backgroundColor = "#060200"; // Style reset
+    document.body.style.color = "#fcf8f0";          
+    passageText.style.color = "#fcf8f0";             
+
     if (isInHistory || isCurrentPassage) {
         if (lightsOnPages.includes(pid)) {
             console.log("Lights On!");
