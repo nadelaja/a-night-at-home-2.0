@@ -224,38 +224,36 @@ function lightsOn(pid) {
 
     if (isInHistory || isCurrentPassage) {
         if (lightsOnPages.includes(pid)) {
-            console.log("Lights On!")
+            console.log("Lights On!");
             document.body.style.backgroundColor = "#fbdfa2";  // Light mode
             document.body.style.color = "#060200";  // Dark text
             passageText.style.color = "#060200";  // Dark Text
-            lightsOnLink.style.color = "#d17a47";
 
             // Update link colors
-            lightsOnLink.forEach(link => {
-                lightsOnLink.style.color = '#cc5500';  // Normal link color
+            lightsOnLinks.forEach(link => {
+                link.style.color = '#000000';  // Normal link color
 
                 // Hover effect
-                lightsOnLink.addEventListener('mouseover', () => {
-                    lightsOnLink.style.color = "#cc5500";  // Hover color
-                    lightsOnLink.style.textDecoration = 'none';
+                link.addEventListener('mouseover', () => {
+                    link.style.color = "#cc5500";  // Hover color
+                    link.style.textDecoration = 'none';
                 });
 
-                lightsOnLink.addEventListener('mouseout', () => {
-                    lightsOnLink.style.color = "#d17a47";  // Reset color
-                    lightsOnLink.style.textDecoration = 'underline';
+                link.addEventListener('mouseout', () => {
+                    link.style.color = "#d17a47";  // Reset color
+                    link.style.textDecoration = 'underline';
                 });
             });
-        }
-            
         } else if (lightsOff.includes(pid)) {
-            console.log("Lights off!")
+            console.log("Lights off!");
             document.body.style.backgroundColor = "#060200"; // Dark mode
             document.body.style.color = "#fcf8f0";          // Light text
             passageText.style.color = "#fcf8f0";  // Light Text
         } else {
-        console.log("No matching passage found.");
+            console.log("No matching passage found.");
+        }
     }
-    }
+}
 
 //Fear Bar
 // Categorization
