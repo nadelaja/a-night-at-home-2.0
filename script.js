@@ -3,7 +3,7 @@ let gameData;
 let currentPassageId;
 const passageHistory = []; //Passage history array!
 const forwardHistory = []; // Tracks forward navigation!
-const lightsOnPages = ["20", "21", "22", "23", "24", "44", "39", "40", "41", "28", "29", "30", "31", "32", "33", "48", "50", "51", "9"];// Passages where the lights should be on
+const lightsOnPages = ["19", "20", "21", "22", "23", "24", "44", "39", "40", "41", "28", "29", "30", "31", "32", "33", "48", "50", "51", "9"];// Passages where the lights should be on
 const lightsOff = ["2", "42"]; // Passages where the lights should page off
 //So when the back button is used the value is updated to true and the forward button appears
 let backButtonUsed = false; 
@@ -66,7 +66,7 @@ if (document.getElementById('random')) { // if... to fix the type error occuring
     document.getElementById('random').addEventListener('click', () => {
         const min = 2; // Define the range of passage IDs
         const max = 51;
-        const exclude = [9, 12, 49,]; // Passages I want exclude, just make the min 50 to exclude 51/52
+        const exclude = [9, 12, 49,]; // Passages I want exclude, just make the min 51 to exclude 52
         const randomPassageId = randomPassage(min, max, exclude);
 
         // Add the passage to my history
@@ -217,12 +217,14 @@ function lightsOn(pid) {
     pid = String(pid); // Remeber that the PIDS ARE STRINGS
     console.log(`Checking lights for pid: ${pid}, type: ${typeof pid}`);
     const passageText = document.getElementById('passageText');
-    const lightsOnLink = document.querySelectorAll('.link');
+    const lightsOnLinks = document.querySelectorAll('.link');
+    const navBackground = document.getElementById('navWrapper')
 
     const isInHistory = passageHistory.includes(pid);  
     const isCurrentPassage = pid === currentPassageId;  // Check the current pid too!
 
     document.body.style.backgroundColor = "#060200"; // Style reset
+    navBackground.style.backgroundColor = "#060200";
     document.body.style.color = "#fcf8f0";          
     passageText.style.color = "#fcf8f0";             
 
@@ -230,27 +232,29 @@ function lightsOn(pid) {
         if (lightsOnPages.includes(pid)) {
             console.log("Lights On!");
             document.body.style.backgroundColor = "#fbdfa2";  // Light mode
+            navBackground.style.backgroundColor = "#fbdfa2";
             document.body.style.color = "#060200";  // Dark text
             passageText.style.color = "#060200";  // Dark Text
 
             // Update link colors
             lightsOnLinks.forEach(link => {
-                link.style.color = '#000000';  // Normal link color
+                link.style.color = "#d2691e";  // Chanege the normal link color by force ha!
 
                 // Hover effect
                 link.addEventListener('mouseover', () => {
-                    link.style.color = "#cc5500";  // Hover color
+                    link.style.color = "#ba4907";  // Hover color
                     link.style.textDecoration = 'none';
                 });
 
                 link.addEventListener('mouseout', () => {
-                    link.style.color = "#d17a47";  // Reset color
+                    link.style.color = "#d2691e";  // Reset color
                     link.style.textDecoration = 'underline';
                 });
             });
         } else if (lightsOff.includes(pid)) {
             console.log("Lights off!");
             document.body.style.backgroundColor = "#060200"; // Dark mode
+            navBackground.style.backgroundColor = "#060200";
             document.body.style.color = "#fcf8f0";          // Light text
             passageText.style.color = "#fcf8f0";  // Light Text
         } else {

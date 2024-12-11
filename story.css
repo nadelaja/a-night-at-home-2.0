@@ -1,19 +1,40 @@
+.gameContainer {
+    padding-bottom: 7em;
+    margin-top: 0em;
+    padding-top: 3em;
+}
+
 #navWrapper {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 4em;
     align-items: center;
-    width: 100%;
+    position: sticky;
+    top: 0;
+    padding: 1em 0;
+    z-index: 1000;
+    margin-bottom: 1em;
+    background-color: #060200;
+}
+
+.nav,
+#buttonContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-left: 5px;
 }
 
 #buttonContainer {
     display: flex;
+    text-align: center;
     justify-content: space-between;
     align-items: center;
 }
 
 .navigation-button {
-    margin-left: 10px;
+    /*margin-left: 10px;*/
+    text-align: center;
 }
 
 #backButton,
@@ -21,25 +42,28 @@
 .nav a,
 .nav a button,
 .nav div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 50px;
     font-family: "Della Respira", serif;
     font-size: 1.14em;
     background-color: #fcf8f0;
-    border: none;
     color: #000;
-    padding: 15px 32px;
-    margin-right: 10px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
+    border: none;
+    /*text-decoration: none;*/
     cursor: pointer;
-    width: 125px;
-    height: 50px;
     border-radius: 50% 50% 0 0;
-    position: relative;
-    overflow: hidden;
-    transition: background-color 0.3s, color 0.3s;
     box-shadow: 0 15px 40px -25px rgb(218, 165, 32);
+    transition: background-color 0.3s, color 0.3s;
 }
+
+/*#backButton,
+#forwardButton {
+            background-color: #daa520;
+                color: #000;
+}*/
 
 #backButton:hover,
 #forwardButton:hover,
@@ -58,14 +82,14 @@
 
 }*/
 
-#passageText{
+#passageText {
     font-size: 1.07em;
-    color:#fcf8f0;
-    line-height: 1.80em;
+    color: #fcf8f0;
+    line-height: 1.35em;
     font-kerning: auto;
     max-height: 600px;
     padding-bottom: 5em;
-        /* 
+    /* 
         overflow-y: auto;
         overflow-x: hidden;*/
     /*padding: 0px 160px 30px 160px;*/
@@ -93,14 +117,16 @@ html {
 }
 
 .link {
-    color: #e8b73c; /* #f3c759 #8fbcbb*/
+    color: #e8b73c;
+    /* #f3c759 #8fbcbb*/
     /* A nice blue for links */
     text-decoration: underline;
     cursor: pointer;
 }
 
 .link:hover {
-    color: #cc9216; /*#88c0d0;*/
+    color: #cc9216;
+    /*#88c0d0;*/
     text-decoration: none;
 }
 
@@ -135,4 +161,33 @@ html {
     /*#ff3b3b*/
     border-radius: 8px;
     transition: width 0.3s ease-in-out;
+}
+
+@media screen and (max-width: 768px) {
+
+    #navWrapper {
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 2em;
+    }
+
+    #buttonContainer {
+    width: 100%;
+    text-align: center;
+    margin-top: 2em;
+    }
+
+    body {
+        font-size: 16px;
+        padding: 1em;
+    }
+
+    #passageText {
+        font-size: 18px;
+        line-height: 1.6;
+    }
+
+    .link {
+        font-size: 18px;
+    }
 }
