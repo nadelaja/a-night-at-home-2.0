@@ -1,5 +1,5 @@
 .gameContainer {
-    padding-bottom: 7em;
+    padding-bottom: 10em;
     margin-top: 0em;
     padding-top: 3em;
 }
@@ -179,7 +179,7 @@ html {
 
     body {
         font-size: 16px;
-        padding: 1em;
+        padding: .25em;
     }
 
     #passageText {
