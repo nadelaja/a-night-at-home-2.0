@@ -218,7 +218,8 @@ function lightsOn(pid) {
     console.log(`Checking lights for pid: ${pid}, type: ${typeof pid}`);
     const passageText = document.getElementById('passageText');
     const lightsOnLinks = document.querySelectorAll('.link');
-    const navBackground = document.getElementById('navWrapper')
+    const navBackground = document.getElementById('navWrapper');
+    const titleText = document.getElementById('gameTitle');
 
     const isInHistory = passageHistory.includes(pid);  
     const isCurrentPassage = pid === currentPassageId;  // Check the current pid too!
@@ -226,7 +227,8 @@ function lightsOn(pid) {
     document.body.style.backgroundColor = "#060200"; // Style reset
     navBackground.style.backgroundColor = "#060200";
     document.body.style.color = "#fcf8f0";          
-    passageText.style.color = "#fcf8f0";             
+    passageText.style.color = "#fcf8f0"; 
+    titleText.style.color = "#fcf8f0"; 
 
     if (isInHistory || isCurrentPassage) {
         if (lightsOnPages.includes(pid)) {
@@ -235,6 +237,7 @@ function lightsOn(pid) {
             navBackground.style.backgroundColor = "#fbdfa2";
             document.body.style.color = "#060200";  // Dark text
             passageText.style.color = "#060200";  // Dark Text
+            titleText.style.color = "#060200";
 
             // Update link colors
             lightsOnLinks.forEach(link => {
@@ -257,6 +260,8 @@ function lightsOn(pid) {
             navBackground.style.backgroundColor = "#060200";
             document.body.style.color = "#fcf8f0";          // Light text
             passageText.style.color = "#fcf8f0";  // Light Text
+            titleText.style.color = "#fcf8f0";  // Light Text
+
         } else {
             console.log("No matching passage found.");
         }

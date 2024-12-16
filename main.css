@@ -33,7 +33,7 @@ a h1:hover {
     color: #daa520;
 }
 
-.gameTitle {
+#gameTitle {
     /*background-color: black;*/
     font-family: "Della Respira", serif;
     color: #fcf8f0;
