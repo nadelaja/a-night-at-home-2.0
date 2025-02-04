@@ -13,6 +13,8 @@ function saveGame(slotIndex) {
 
     // Get current passage ID from the global variable or URL
     const currentPid = getCurrentPassageId();
+    currentPid = String(pid) // Remeber that the PIDS ARE STRINGS
+
 
     // Prepare save data
     const saveData = {
@@ -143,10 +145,9 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-// Optional: Export functions if needed for module-based development
-export {
+/*export {
     saveGame,
     loadProgress,
     deleteSave,
     updateSaveSlotUI
-};
+};*/

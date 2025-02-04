@@ -206,7 +206,7 @@ function shouldShowButton(passage, action) {
     }
 }
 
-// Function for backround color chang
+// Function for backround color change
 
 /* if pid is in the passageHistory array and (includes) in the lightsOnPage array then
 the background and text colors change and remaind the new colors, if the pid
@@ -220,12 +220,16 @@ function lightsOn(pid) {
     const lightsOnLinks = document.querySelectorAll('.link');
     const navBackground = document.getElementById('navWrapper');
     const titleText = document.getElementById('gameTitle');
+    const storyHeader = document.getElementById('storyHeader');
+
 
     const isInHistory = passageHistory.includes(pid);  
     const isCurrentPassage = pid === currentPassageId;  // Check the current pid too!
 
     document.body.style.backgroundColor = "#060200"; // Style reset
     navBackground.style.backgroundColor = "#060200";
+    storyHeader.style.backgroundColor = "#060200";
+
     document.body.style.color = "#fcf8f0";          
     passageText.style.color = "#fcf8f0"; 
     titleText.style.color = "#fcf8f0"; 
@@ -235,6 +239,8 @@ function lightsOn(pid) {
             console.log("Lights On!");
             document.body.style.backgroundColor = "#fbdfa2";  // Light mode
             navBackground.style.backgroundColor = "#fbdfa2";
+            storyHeader.style.backgroundColor = "#fbdfa2";
+
             document.body.style.color = "#060200";  // Dark text
             passageText.style.color = "#060200";  // Dark Text
             titleText.style.color = "#060200";
@@ -270,12 +276,12 @@ function lightsOn(pid) {
 
 //Fear Bar
 // Categorization
-const braveryPIDs = ["15", "4", "16", "9", "20", "23", "24", "25", "26", "28", "12", "17", "18"];
+/*const braveryPIDs = ["15", "4", "16", "9", "20", "23", "24", "25", "26", "28", "12", "17", "18"];
 const fearPIDs = ["14", "6", "13", "12", "21", "22", "27", "20"];
 const neutralityPIDs = ["34", "9", "10", "19", "11"];
 
 // Initial fear bar state
-let fearLevel = 50; // Start at 50% everyone is a little nervous at night...
+let fearLevel = 50; // Start at 50% everyone is a little nervous at night...*/
 
 /* *
  * Updates the fear bar based on the choice's PID.

@@ -4,6 +4,13 @@
     padding-top: 3em;
 }
 
+#storyHeader{
+    position: sticky;
+    top: 0;
+    background-color: #060200;
+    z-index: 1000;
+}
+
 #navWrapper {
     display: flex;
     justify-content: space-between;

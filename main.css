@@ -56,7 +56,8 @@ a h1:hover {
 }
 
 .gameContainer,
-.gateContainer {
+.gateContainer,
+.blurbContainer {
     font-size: 18px;
     text-align: left;
     margin: auto  18em; 
@@ -133,8 +134,26 @@ box-shadow: rgba(218, 165, 32, .02) 0px 25px 20px -20px;
     font-size: .9em;
 }
 
+.copy a {
+    text-decoration: none;
+    color:#fcf8f0
+}
+
+.copy a:hover {
+    text-decoration: underline;
+    color: #daa520;
+}
+
 
 /* For smaller screens*/
+
+@media (max-width: 1100px) {
+    .blurbContainer{
+        margin: 9em;
+    }
+    
+}
+
 @media (max-width: 768px) {
     .menu {
         flex-direction: column;
@@ -148,7 +167,16 @@ box-shadow: rgba(218, 165, 32, .02) 0px 25px 20px -20px;
         padding: .75rem 1rem;
     }
 
-    .blurb{
-        margin: auto;
+    .blurbContainer {
+    margin: 3em;
     }
+
+    .blurb {
+        margin: auto;
+        font-size: 18px;
+        line-height: 1.95;
+        padding: 0px;
+    }
+
+
 }
