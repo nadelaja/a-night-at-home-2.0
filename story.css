@@ -68,8 +68,8 @@
 
 /*#backButton,
 #forwardButton {
-            background-color: #daa520;
-                color: #000;
+    background-color: #daa520;
+    color: #000;
 }*/
 
 #backButton:hover,
@@ -178,10 +178,23 @@ html {
         margin-bottom: 2em;
     }
 
+    #backButton,
+    #forwardButton,
+    .nav a,
+    .nav a button,
+    .nav div {
+        width: 75px;
+        height: 50px;
+        }
+
+    #forwardButton {
+        width: 90px;
+    }
+
     #buttonContainer {
-    width: 100%;
-    text-align: center;
-    margin-top: 2em;
+        width: 100%;
+        text-align: center;
+        margin-top: 2em;
     }
 
     body {

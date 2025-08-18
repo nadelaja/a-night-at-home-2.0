@@ -19,11 +19,10 @@ fetch('A _Night_at_Home_JSON_updated.json')
         const passageFromURL = urlParams.get('pid');
 
         // Use the URL parameter for a gate if it exists, otherwise use default "34"
-        currentPassageId = passageFromURL || "34";
+        currentPassageId = passageFromURL || "34";  //34 is the id of first passage 
         renderPassage(currentPassageId);
     });       
 
-    
 // Updated renderPassage function that includes button creation
 function renderPassage(pid) {
     const passage = gameData.find(p => p.pid === pid);
@@ -133,7 +132,7 @@ function getPassageIdByName(linkName) {
 function loadNextPassage(nextPid) {
     console.log("Loading next passage with ID:", nextPid);
     // Save current passage to history array before changing (including the start page!)
-    if (currentPassageId && !backButtonUsed) {  //And backButtonUsed is false 
+    if (currentPassageId && !backButtonUsed) {   //And backButtonUsed is false 
         passageHistory.push(currentPassageId);
         console.log(passageHistory)
     }
@@ -174,7 +173,7 @@ function NavigationAction(passage, action) {
     switch (action) {
         case 'previous':
             if (passageHistory.length > 0) {
-                const previousPid = passageHistory.pop();  // Remove passage ID from history array
+                const previousPid = passageHistory.pop();  // Remove passage ID from history array & returns that value
                 forwardHistory.push(currentPassageId);    // Save the current passage to the forward navigation array
                 currentPassageId = previousPid;          // Navigate to the previous passage
                 backButtonUsed = true;
@@ -208,10 +207,10 @@ function shouldShowButton(passage, action) {
 
 // Function for backround color change
 
-/* if pid is in the passageHistory array and (includes) in the lightsOnPage array then
-the background and text colors change and remaind the new colors, if the pid
+/* if pid is in the passageHistory array and included in the lightsOnPage array then
+the background and text colors change and remain the new colors, if the pid
 is in the passageHistory array and the lightsOff array then the background 
-and text colors change and remaind the new colors, else nothing happenes*/
+and text colors also change and remaind the new colors, else nothing happenes*/
 
 function lightsOn(pid) {
     pid = String(pid); // Remeber that the PIDS ARE STRINGS
@@ -221,7 +220,6 @@ function lightsOn(pid) {
     const navBackground = document.getElementById('navWrapper');
     const titleText = document.getElementById('gameTitle');
     const storyHeader = document.getElementById('storyHeader');
-
 
     const isInHistory = passageHistory.includes(pid);  
     const isCurrentPassage = pid === currentPassageId;  // Check the current pid too!
