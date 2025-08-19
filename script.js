@@ -61,7 +61,7 @@ function randomPassage(min, max, exclude) {
 }
 
     // Add an event listener to the random passage button
-if (document.getElementById('random')) { // if... to fix the type error occuring when not on the gates page
+if (document.getElementById('random')) {  // if... to fix the type error occuring when not on the gates page
     document.getElementById('random').addEventListener('click', () => {
         const min = 2; // Define the range of passage IDs
         const max = 51;
@@ -89,10 +89,10 @@ function formatText(text) {
         return `<span style="" class="link" onclick="loadNextPassage('${linkPid}')"><b>${linkText}</b></span>`;
     });
 
-    //Remove /n and replace then with breaks
+    // Removes /n and replaces then with breaks
     formattedText = formattedText.replace(/\n/g, '<br>');
 
-    // Removes the click macros and clean up the square bracket
+    // Removes the click macros and cleans up the square bracket
     formattedText = formattedText.replace(/\(click:.*?\)\[/g, ''); // Removes "(click:...)["
 
     // Italic formatting for text wrapped in double slashes //scary//
