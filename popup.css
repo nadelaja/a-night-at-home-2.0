@@ -5,11 +5,10 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.75);
-    /* Semi-transparent background */
-    z-index: 9999;
-    /* Make sure the pop-up is on top of everything */
+    background-color: rgba(0, 0, 0, 0.75); /* Semi-transparent background */
+    z-index: 9999; /* Make sure the pop-up is on top of everything */
 }
+
 
 .popup-content {
     position: absolute;
@@ -20,11 +19,9 @@
     color: #060200;
     padding: 20px;
     width: 300px;
-    /* of  the popup box */
     height: 200px;
     display: flex;
     flex-direction: column;
-
 }
 
 .popup-content h2 {
@@ -109,6 +106,7 @@
 
 
 .used-save {
-    background-color: red;
+    background-color: #daa520;
     color: #000;
+    width: auto;
 }

@@ -1,7 +1,7 @@
 .gameContainer {
     padding-bottom: 10em;
     margin-top: 0em;
-    padding-top: 3em;
+    /* padding-top: 3em; */
 }
 
 #storyHeader{
@@ -66,12 +66,6 @@
     transition: background-color 0.3s, color 0.3s;
 }
 
-/*#backButton,
-#forwardButton {
-    background-color: #daa520;
-    color: #000;
-}*/
-
 #backButton:hover,
 #forwardButton:hover,
 .nav a:hover,
@@ -80,14 +74,6 @@
     background-color: #daa520;
     color: #fcf8f0;
 }
-
-/*#backButton {
-
-}
-
-#forwardButton {
-
-}*/
 
 #passageText {
     font-size: 1.07em;
@@ -200,6 +186,10 @@ html {
     body {
         font-size: 16px;
         padding: .25em;
+    }
+
+    .gameContainer{
+        padding-bottom: 450px;
     }
 
     #passageText {

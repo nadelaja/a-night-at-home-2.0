@@ -39,6 +39,9 @@ function renderPassage(pid) {
 
     // Call the lights function after rendering
     lightsOn(pid);
+
+    // Scroll to top after rendering the new passage
+    window.scrollTo({top: 0, left: 0, behavior: 'smooth'}); 
 }
 
 // Gates page functionality!
@@ -271,6 +274,7 @@ function lightsOn(pid) {
         }
     }
 }
+
 
 //Fear Bar
 // Categorization

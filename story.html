@@ -16,6 +16,35 @@
 </head>
 
 <body>
+    <!-- Save popup -->
+<div id="save-popup" class="popup save-popup" style="display: none;">
+    <div class="popup-content">
+        <span id="close-btn">&#x2716;</span>
+        <h2>Save Slots</h2>
+
+        <div class="saveContainer" id="playerSaves">
+            <div class="saveAndDelete">
+                <div id="save1" class="saveSlot empty-save">Save 1 - Empty</div>
+                <button id="delete1" class="deleteBtn"><i class="fa-solid fa-trash"></i></button>
+            </div>
+
+            <div class="saveAndDelete">
+                <div id="save2" class="saveSlot empty-save">Save 2 - Empty</div>
+                <button id="delete2" class="deleteBtn"><i class="fa-solid fa-trash"></i></button>
+            </div>
+
+            <div class="saveAndDelete">
+                <div id="save3" class="saveSlot empty-save">Save 3 - Empty</div>
+                <button id="delete3" class="deleteBtn"><i class="fa-solid fa-trash"></i></button>
+            </div>
+
+            <div class="saveAndDelete">
+                <div id="save4" class="saveSlot empty-save">Save 4 - Empty</div>
+                <button id="delete4" class="deleteBtn"><i class="fa-solid fa-trash"></i></button>
+            </div>
+        </div>
+    </div>
+</div>
 
     <div class="gameContainer">
         <div id="storyHeader">
@@ -31,7 +60,6 @@
                 </div>
 
             <div id="buttonContainer" class="navigation-button">
-
                 <!-- holds the back and forward buttons, hidden until the users is beyond the first passage-->
             </div>
 
@@ -42,7 +70,7 @@
 
     <script src="script.js"></script>
     <script src="popup.js"></script>
-
+    <script src="saves.js"></script>
 </body>
 
 </html>
